@@ -13,13 +13,10 @@ import Header from "@poe/components/Header";
 import {loadSettings, updateSettings} from "@poe/utils/LocalStorage";
 import {VendorSettings} from "@poe/utils/SavedSettings";
 import {ProfileContext} from "@poe/components/profile/ProfileContext";
-import GemNameList from './GemNameList';
 import Infobox from '@poe/components/infobox/Infobox';
 import FilterCard from "@shared/components/FilterCard/FilterCard";
 import {Checkbox} from "@shared/components/Checkbox/Checkbox";
 import {useFavoritePage} from "@poe/core/favorites/useFavoritePage";
-import type {GemsRegex} from "@poe/types/generated/gems";
-import {loadGems} from "@poe/utils/loadData";
 
 
 const Vendor = () => {
@@ -30,11 +27,6 @@ const Vendor = () => {
 
   const [result, setResult] = React.useState("");
   const [warning, setWarning] = React.useState<string | undefined>();
-  const [gems, setGems] = React.useState<GemsRegex>();
-
-  useEffect(() => {
-    loadGems().then(setGems);
-  }, []);
 
   const [rrr, setRrr] = React.useState(profile.vendor.colors.rrr);
   const [ggg, setGgg] = React.useState(profile.vendor.colors.ggg);
@@ -108,7 +100,6 @@ const Vendor = () => {
   const [weaponWand, setWeaponWand] = React.useState(profile.vendor.weapon.wand);
   const [weaponShield, setWeaponShield] = React.useState(profile.vendor.weapon.shield);
 
-  const [selectedGems, setSelectedGems] = React.useState(profile.vendor.gems)
 
   const listOfOptions = [
     setRrr, setGgg, setBbb,
@@ -139,7 +130,6 @@ const Vendor = () => {
     fire, cold, phys, chaos, anyGem,
     dmgPhys, fireMult, coldMult, chaosMult,
     weaponSceptre, weaponMace, weaponAxe, weaponSword, weaponBow, weaponClaw, weaponDagger, weaponStaff, weaponWand, weaponShield,
-    selectedGems
   ]
 
   let settings: VendorSettings = {
@@ -197,20 +187,19 @@ const Vendor = () => {
       wand: weaponWand,
       shield: weaponShield,
     },
-    gems: selectedGems
   };
 
   useEffect(() => {
     if (!favoritePage.isEditingFavorite) updateSettings(globalProfile, (latest) => ({...latest, vendor: {...settings}}));
-    setResult(generateResultString(settings, gems));
-    setWarning(generateWarnings(settings, gems));
-  }, [...listOfvalues, gems])
+    setResult(generateResultString(settings));
+    setWarning(generateWarnings(settings));
+  }, listOfvalues)
 
   return (
     <>
       <Header text="Vendor"/>
       <div className="break"/>
-      <RegexResultBox result={result} warning={warning} favorite={favoritePage.action(settings, {language: storedProfile.language})} reset={() => {
+      <RegexResultBox result={result} warning={warning} favorite={favoritePage.action(settings, {language: lang})} reset={() => {
         listOfOptions.forEach(setting => {
           setting(false);
         })
@@ -314,13 +303,6 @@ const Vendor = () => {
             </div>
           </FilterCard>
         </div>
-      </div>
-
-      <div className="vendor-gems-card">
-        <div className="vendor-gems-card-header">
-          <span className="vendor-gems-card-title">Gems</span>
-        </div>
-        <GemNameList id="gemnamelist" gems={gems?.tokens ?? []} selected={selectedGems} setSelected={setSelectedGems}/>
       </div>
 
       <div className="break"/>

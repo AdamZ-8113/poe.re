@@ -9,6 +9,7 @@ import type {RegexFavoriteAction} from "@shared/components/RegexResultBox/RegexR
 
 export interface FavoritePageSession<T> {
   initialConfiguration: T;
+  initialLanguage: string;
   isEditingFavorite: boolean;
   action: (configuration: T, context?: FavoriteContextData, disabledReason?: string) => RegexFavoriteAction;
 }
@@ -17,7 +18,7 @@ export const useFavoritePage = <T extends object>(pageKey: Poe1FavoritePageKey, 
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   const location = useLocation();
-  const {globalProfile} = useContext(ProfileContext);
+  const {globalProfile, lang} = useContext(ProfileContext);
   const {favorites, requestCreate, updateSnapshot, lastCreationSuccess, clearCreationSuccess} = useFavorites();
   const requestedId = searchParams.get("favorite");
   const requestedFavorite = requestedId ? favorites.find((candidate) => candidate.id === requestedId) : undefined;
@@ -64,6 +65,7 @@ export const useFavoritePage = <T extends object>(pageKey: Poe1FavoritePageKey, 
 
   return {
     initialConfiguration,
+    initialLanguage: favorite ? favorite.context.language ?? "ENGLISH" : lang,
     isEditingFavorite,
     action: (configuration, context = {}, disabledReason) => ({
       mode: isEditingFavorite ? "edit" : "create",

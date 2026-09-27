@@ -8,9 +8,14 @@ import {defaultSettings, Settings} from "../settings";
 import ProfileExportBox from "@shared/components/profile/ProfileExportBox";
 import ProfileImportBox from "@shared/components/profile/ProfileImportBox";
 import {decodeProfile, encodeProfile} from "./ProfileTransfer";
+import {RepoeLanguage, RepoeLanguageKey} from "@poe/utils/Languages";
 
-const Poe2ProfileSelector = () => {
-  const {currentProfile, setCurrentProfile} = useContext(Poe2ProfileContext);
+interface Poe2ProfileSelectorProps {
+  languageSelect?: boolean;
+}
+
+const Poe2ProfileSelector = ({languageSelect = false}: Poe2ProfileSelectorProps) => {
+  const {currentProfile, setCurrentProfile, language, setLanguage} = useContext(Poe2ProfileContext);
   const [profiles, setProfiles] = useState<string[]>(() => loadProfileNames());
   const [showNew, setShowNew] = useState(false);
   const [showEdit, setShowEdit] = useState(false);
@@ -135,6 +140,17 @@ const Poe2ProfileSelector = () => {
           />
         }
       </div>
+      <select
+        name="language"
+        className="dropdown-select dropdown-sm"
+        value={languageSelect ? language : "ENGLISH"}
+        disabled={!languageSelect}
+        onChange={(event) => setLanguage(event.target.value as RepoeLanguageKey)}
+      >
+        {Object.entries(RepoeLanguage).map(([key, data]) => (
+          <option className="option-language" key={key} value={key}>{data.flag} {data.name}</option>
+        ))}
+      </select>
       <div className="profile-actions">
         <button className="export-button" onClick={() => {
           setShowNew(false);

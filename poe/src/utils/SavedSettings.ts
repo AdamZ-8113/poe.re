@@ -354,7 +354,6 @@ export interface VendorSettings {
     wand: boolean;
     shield: boolean;
   };
-  gems: number[];
 }
 
 export interface GemsSettings {
@@ -565,7 +564,6 @@ export const defaultSettings: SavedSettings = {
       wand: false,
       shield: false,
     },
-    gems: [],
   },
   gems: {
     levelEnabled: false,

@@ -1,5 +1,3 @@
-import type {GemsRegex} from "@poe/types/generated/gems";
-
 export interface PoeStringSettings {
   anyTwoLink: boolean
   anyThreeLink: boolean
@@ -79,10 +77,9 @@ export interface PoeStringSettings {
     wand: boolean
     shield: boolean
   }
-  gems: number[] // Generated Gems token IDs
 }
 
-export function generateResultString(settings: PoeStringSettings, gemData?: GemsRegex): string {
+export function generateResultString(settings: PoeStringSettings): string {
   let result = ""
   result = addExpression(result, generate6Socket(settings));
   result = addExpression(result, generateAnyColoredLinkStr(settings));
@@ -96,7 +93,6 @@ export function generateResultString(settings: PoeStringSettings, gemData?: Gems
   result = addExpression(result, plusGemsStr(settings));
   result = addExpression(result, generateWeaponDamage(settings));
   result = addExpression(result, generateWeaponType(settings));
-  result = addExpression(result, generateGems(settings, gemData));
   result = simplifyRBG(result);
   // fix for quoted regexes
   if (result.match("\"| ")) {
@@ -106,17 +102,10 @@ export function generateResultString(settings: PoeStringSettings, gemData?: Gems
   return result;
 }
 
-export function generateWarnings(settings: PoeStringSettings, gemData?: GemsRegex): string | undefined {
+export function generateWarnings(settings: PoeStringSettings): string | undefined {
   let warnings = "";
   if (plusGemsStr(settings) && settings.weapon.wand) {
     warnings += "All wands will be displayed [conflict: +1 wand & weapon base=wand].";
-  }
-  const usesVendorGems = !!generateGems(settings, gemData)
-  if (usesVendorGems && generateWeaponType(settings)) {
-    warnings += "Undesired gems will be displayed [conflict: weapon types & vendor gems]"
-  }
-  if (usesVendorGems && settings.damage.phys) {
-    warnings += "Heavy Strike will be displayed [conflict: phys damage & vendor gems]"
   }
   return warnings ?? undefined;
 }
@@ -405,23 +394,4 @@ export function generateWeaponType(settings: PoeStringSettings): string {
   } else {
     return "";
   }
-}
-
-export function generateGems(settings: PoeStringSettings, gemData?: GemsRegex): string {
-  if (!gemData) {
-    return "";
-  }
-  if (!settings.gems.length) {
-    return "";
-  }
-  const tokensById = new Map(
-    gemData.tokens.map(token => [token.id, token.regex])
-  );
-
-  const gems = settings.gems
-    .map((id) => tokensById.get(id)).filter((e) => e !== null) as string[];
-
-  return gems.reduce((expr, gemKey) =>
-    addExpression(expr, gemKey as string)
-  );
 }

@@ -1,5 +1,5 @@
-import React, {useContext, useEffect, useMemo, useState} from "react";
-import Header from "@poe/components/Header";
+import React, {useContext, useEffect, useMemo, useRef, useState} from "react";
+import {HeaderWithLanguage} from "@poe/components/Header";
 import RegexResultBox from "@shared/components/RegexResultBox/RegexResultBox";
 import FilterCard from "@shared/components/FilterCard/FilterCard";
 import PriceRangeSlider from "@shared/components/PriceRangeSlider/PriceRangeSlider";
@@ -9,41 +9,16 @@ import {loadSettings, updateSettings} from "@poe/utils/LocalStorage";
 import {defaultSettings, GemsSettings} from "@poe/utils/SavedSettings";
 import {loadGems} from "@poe/utils/loadData";
 import type {GemsRegex} from "@poe/types/generated/gems";
-import {generateNumberRangeRegex} from "@shared/core/regex/GenerateNumberRegex";
 import {useFavoritePage} from "@poe/core/favorites/useFavoritePage";
 import GemNameList from "../vendor/GemNameList";
 import "./Gems.css";
+import {generateGemsRegex, translateGemIds} from "./GemsOutput";
 
 const gemLevels = Array.from({length: 21}, (_, index) => index + 1);
 const gemQualities = Array.from({length: 24}, (_, index) => index);
 
-const boundedValue = (value: string, low: number, high: number) => {
-  const parsed = Number(value);
-  if (!Number.isInteger(parsed)) return low;
-  return Math.max(low, Math.min(high, parsed));
-};
-
-const rangeRegex = (min: string, max: string, low: number, high: number, prefix: string, suffix = "") => {
-  const start = boundedValue(min, low, high);
-  const end = boundedValue(max, low, high);
-  if (end < start) return "";
-  return `${prefix}${generateNumberRangeRegex(String(start), String(end), false)}${suffix}`;
-};
-
-const generateGemsRegex = (settings: GemsSettings, gems?: GemsRegex) => {
-  const names = gems?.tokens
-    .filter((gem) => settings.selected.includes(gem.id))
-    .map((gem) => gem.regex) ?? [];
-  const nameRegex = names.length === 0 ? "" : names.length === 1 ? names[0] : `"${names.join("|")}"`;
-  const levelValueRegex = rangeRegex(settings.levelMin, settings.levelMax, 1, 21, "level: ");
-  const qualityValueRegex = rangeRegex(settings.qualityMin, settings.qualityMax, 0, 23, "quality: \\+", "%");
-  const levelRegex = settings.levelEnabled && levelValueRegex ? `"${levelValueRegex}"` : "";
-  const qualityRegex = settings.qualityEnabled && qualityValueRegex ? `"${qualityValueRegex}"` : "";
-  return [nameRegex, levelRegex, qualityRegex].filter(Boolean).join(" ");
-};
-
 const Gems = () => {
-  const {globalProfile} = useContext(ProfileContext);
+  const {globalProfile, lang} = useContext(ProfileContext);
   const storedProfile = loadSettings(globalProfile);
   const favoritePage = useFavoritePage("gems", storedProfile.gems);
   const profile = {...storedProfile, gems: favoritePage.initialConfiguration};
@@ -58,8 +33,22 @@ const Gems = () => {
   const [showSupports, setShowSupports] = useState(profile.gems.showSupports);
   const [supportType, setSupportType] = useState(profile.gems.supportType);
   const [selected, setSelected] = useState(profile.gems.selected);
+  const loadedLanguage = useRef<string | undefined>(undefined);
 
-  useEffect(() => { loadGems().then(setGems); }, []);
+  useEffect(() => {
+    let active = true;
+    setGems(undefined);
+    const sourceLanguage = loadedLanguage.current ?? favoritePage.initialLanguage;
+    Promise.all([loadGems(sourceLanguage), loadGems(lang)]).then(([source, target]) => {
+      if (!active) return;
+      if (sourceLanguage !== lang) {
+        setSelected(translateGemIds(selected, source, target));
+      }
+      loadedLanguage.current = lang;
+      setGems(target);
+    });
+    return () => { active = false; };
+  }, [lang, favoritePage.initialLanguage]);
 
   const settings: GemsSettings = {levelEnabled, levelMin, levelMax, qualityEnabled, qualityMin, qualityMax, showSkills, showSupports, supportType, selected};
   const result = useMemo(() => generateGemsRegex(settings, gems), [settings, gems]);
@@ -69,9 +58,9 @@ const Gems = () => {
   }, [levelEnabled, levelMin, levelMax, qualityEnabled, qualityMin, qualityMax, showSkills, showSupports, supportType, selected]);
 
   return <>
-    <Header text="Gems"/>
+    <HeaderWithLanguage text="Gems"/>
     <RegexResultBox result={result} warning={undefined}
-                    favorite={favoritePage.action(settings, {language: storedProfile.language})}
+                    favorite={favoritePage.action(settings, {language: lang})}
                     reset={() => {
                       const defaults = defaultSettings.gems;
                       setLevelEnabled(defaults.levelEnabled);
@@ -114,10 +103,19 @@ const Gems = () => {
       <div className="gems-card-header"><span className="gems-card-title">Gems</span></div>
       <GemNameList id="gems-name-list" gems={gems?.tokens ?? []} selected={selected} setSelected={setSelected}
                    filter={(gem) => gem.options.support
-                     ? showSupports && (supportType === "all" || gem.rawText.startsWith("Awakened"))
+                     ? showSupports && (supportType === "all" || isAwakenedGem(gem.rawText, lang))
                      : showSkills}/>
     </div>
   </>;
+};
+
+const isAwakenedGem = (name: string, language: string): boolean => {
+  const awakenedMarkers: Record<string, string> = {
+    ENGLISH: "awakened", FRENCH: "éveill", GERMAN: "erweckte", JAPANESE: "覚醒",
+    KOREAN: "각성", PORTUGUESE: "despert", RUSSIAN: "пробуж", SPANISH: "despert",
+    THAI: "จุติ", CHINESE: "覺醒",
+  };
+  return name.toLocaleLowerCase().includes(awakenedMarkers[language] ?? awakenedMarkers.ENGLISH);
 };
 
 export default Gems;
