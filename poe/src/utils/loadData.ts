@@ -53,8 +53,8 @@ const scarabData = createLanguageDataLoader<string, Scarabs>((language) =>
 const mapMods = createLanguageDataLoader<string, MapModsRegex>((language) =>
   fetchJson<MapModsRegex>(`${basePath}/mapmods/Generated.Map.${language}.min.json`),
 );
-const gems = lazy(() =>
-  fetchJson<GemsRegex>(`${basePath}/gems/Generated.Gems.ENGLISH.min.json`),
+const gems = createLanguageDataLoader<string, GemsRegex>((language) =>
+  fetchJson<GemsRegex>(`${basePath}/gems/Generated.Gems.${language}.min.json`),
 );
 
 export function loadItemBasetypes(): Promise<ItemBase[]> {
@@ -71,6 +71,6 @@ export const loadExpedition = (): Promise<Expedition> => expedition();
 export const loadJewel = (): Promise<Jewel> => jewel();
 export const loadScarabs = (language: string): Promise<Scarabs> => scarabData(language);
 export const loadMapMods = (language: string): Promise<MapModsRegex> => mapMods(language);
-export function loadGems(): Promise<GemsRegex> {
-  return gems();
+export function loadGems(language = "ENGLISH"): Promise<GemsRegex> {
+  return gems(language);
 }

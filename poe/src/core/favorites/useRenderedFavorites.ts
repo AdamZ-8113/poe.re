@@ -1,10 +1,11 @@
 import {useEffect, useMemo, useState} from "react";
 import {generateMapModRegex} from "@poe/pages/maps/OptimizedMapOutput";
 import {defaultSettings, MapSettings} from "@poe/utils/SavedSettings";
-import {loadMapMods} from "@poe/utils/loadData";
-import {loadBoatMods} from "@poe/utils/loadData";
+import {loadBoatMods, loadGems, loadMapMods} from "@poe/utils/loadData";
 import {generateBoatModRegex} from "@poe/pages/boat/BoatOutput";
-import type {BoatSettings} from "@poe/utils/SavedSettings";
+import {RepoeLanguage} from "@poe/utils/Languages";
+import {generateGemsRegex, translateGemIds} from "@poe/pages/gems/GemsOutput";
+import type {BoatSettings, GemsSettings} from "@poe/utils/SavedSettings";
 import type {RepoeLanguageKey} from "@poe/utils/Languages";
 import {merge} from "@shared/core/utils";
 import {FavoriteRecord, isRegexFavorite} from "./FavoriteTypes";
@@ -27,6 +28,10 @@ const normalizeBoatSettings = (configuration: unknown): BoatSettings => {
   if (configuration === null || typeof configuration !== "object" || Array.isArray(configuration)) return defaultSettings.boat;
   return merge(defaultSettings.boat, JSON.parse(JSON.stringify(configuration)) as Partial<BoatSettings>);
 };
+const normalizeGemsSettings = (configuration: unknown): GemsSettings => {
+  if (configuration === null || typeof configuration !== "object" || Array.isArray(configuration)) return defaultSettings.gems;
+  return merge(defaultSettings.gems, JSON.parse(JSON.stringify(configuration)) as Partial<GemsSettings>);
+};
 
 /**
  * Keeps saved favorites immutable while presenting their language-dependent
@@ -35,9 +40,11 @@ const normalizeBoatSettings = (configuration: unknown): BoatSettings => {
 export const useRenderedFavorites = (favorites: FavoriteRecord[], language: RepoeLanguageKey): FavoriteRecord[] => {
   const [mapData, setMapData] = useState<{language: RepoeLanguageKey; data: Awaited<ReturnType<typeof loadMapMods>>}>();
   const [boatData, setBoatData] = useState<{language: RepoeLanguageKey; data: Awaited<ReturnType<typeof loadBoatMods>>}>();
+  const [gemDataById, setGemDataById] = useState<Map<string, {source: Awaited<ReturnType<typeof loadGems>>; target: Awaited<ReturnType<typeof loadGems>>}>>();
   const languageDependentFavorites = favorites.filter(isRegexFavorite).filter((favorite) => favorite.languageDependent);
   const hasMapFavorites = languageDependentFavorites.some((favorite) => favorite.pageKey === "maps");
   const hasBoatFavorites = languageDependentFavorites.some((favorite) => favorite.pageKey === "boat");
+  const gemFavorites = languageDependentFavorites.filter((favorite) => favorite.pageKey === "gems");
 
   useEffect(() => {
     if (!hasMapFavorites) {
@@ -59,6 +66,21 @@ export const useRenderedFavorites = (favorites: FavoriteRecord[], language: Repo
     loadBoatMods(language).then((data) => { if (!cancelled) setBoatData({language, data}); }).catch(() => { if (!cancelled) setBoatData(undefined); });
     return () => { cancelled = true; };
   }, [hasBoatFavorites, language]);
+
+  useEffect(() => {
+    if (!gemFavorites.length) { setGemDataById(undefined); return; }
+    let cancelled = false;
+    Promise.all(gemFavorites.map(async (favorite) => {
+      const storedLanguage = favorite.context.language;
+      const sourceLanguage = storedLanguage && Object.prototype.hasOwnProperty.call(RepoeLanguage, storedLanguage)
+        ? storedLanguage as RepoeLanguageKey
+        : "ENGLISH";
+      const [source, target] = await Promise.all([loadGems(sourceLanguage), loadGems(language)]);
+      return [favorite.id, {source, target}] as const;
+    })).then((entries) => { if (!cancelled) setGemDataById(new Map(entries)); })
+      .catch(() => { if (!cancelled) setGemDataById(undefined); });
+    return () => { cancelled = true; };
+  }, [favorites, language]);
 
   return useMemo(() => {
     return favorites.map((favorite) => {
@@ -83,7 +105,19 @@ export const useRenderedFavorites = (favorites: FavoriteRecord[], language: Repo
           return {...favorite, regex: settings.customText.enabled && settings.customText.value ? `${generated} ${settings.customText.value}` : generated};
         } catch { return favorite; }
       }
+      if (favorite.pageKey === "gems") {
+        const data = gemDataById?.get(favorite.id);
+        if (!data) return favorite;
+        try {
+          const settings = normalizeGemsSettings(favorite.configuration);
+          const localizedSettings: GemsSettings = {
+            ...settings,
+            selected: translateGemIds(settings.selected, data.source, data.target),
+          };
+          return {...favorite, regex: generateGemsRegex(localizedSettings, data.target)};
+        } catch { return favorite; }
+      }
       return favorite;
     });
-  }, [favorites, language, mapData, boatData]);
+  }, [favorites, language, mapData, boatData, gemDataById]);
 };
