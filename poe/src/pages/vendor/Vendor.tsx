@@ -199,14 +199,13 @@ const Vendor = () => {
     <>
       <Header text="Vendor"/>
       <div className="break"/>
-      <RegexResultBox result={result} warning={warning} favorite={favoritePage.action(settings, {language: lang})} reset={() => {
+      <RegexResultBox result={result} warning={warning} favorite={favoritePage.action(settings)} reset={() => {
         listOfOptions.forEach(setting => {
           setting(false);
         })
         listOfNumbers.forEach(settings => {
           settings(undefined);
         })
-        setSelectedGems([])
       }}/>
       <div className="break"/>
       <div className="vendor-wrapper">
