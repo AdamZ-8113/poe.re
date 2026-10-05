@@ -1,0 +1,21 @@
+.poe-import { padding: 0 16px 24px; max-width: 840px; margin: auto; }
+.poe-import h1, .poe-import h2 { padding-left: 0; }
+.poe-import-intro, .poe-import-muted { color: var(--color-text-muted); }
+.poe-import-card { padding: 20px; border: 1px solid var(--color-border-strong); border-radius: 8px; background: var(--color-card-bg); }
+.poe-import label { display: block; font-weight: 600; margin-bottom: 8px; }
+.poe-import input { box-sizing: border-box; width: 100%; padding: 10px 12px; border: 1px solid var(--color-border-strong); border-radius: 4px; background: var(--color-area); color: var(--color-text); font: inherit; }
+.poe-import input:focus-visible, .poe-import button:focus-visible, .poe-import a:focus-visible { outline: 2px solid var(--color-accent-hover); outline-offset: 3px; }
+.poe-import input[aria-invalid="true"] { border-color: var(--color-text-error); }
+.poe-import-modifiers { padding-left: 24px; }
+.poe-import li { padding: 4px 0; overflow-wrap: anywhere; }
+.poe-import-error { color: var(--color-text-error); }
+.poe-import-warning { padding: 0 16px 8px; border-left: 3px solid var(--color-text-warn); }
+.poe-import-regex { white-space: pre-wrap; overflow-wrap: anywhere; padding: 16px; border-radius: 4px; background: var(--color-regex-bg); }
+.poe-import-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.poe-import button { padding: 10px 16px; border: 1px solid var(--color-border-strong); border-radius: 4px; background: var(--color-area); color: var(--color-text); font: inherit; cursor: pointer; }
+.poe-import button.poe-import-confirm { background: var(--color-accent); }
+.poe-import button:hover:enabled { background: var(--color-area-hover); }
+.poe-import button.poe-import-confirm:hover:enabled { background: var(--color-accent-hover); }
+.poe-import button:disabled { opacity: .6; cursor: default; }
+.poe-import-maps-link { display: inline-block; margin-top: 20px; color: var(--color-text-link); text-decoration: underline; }
+@media (max-width: 600px) { .poe-import { padding: 0 8px 20px; } .poe-import-card { padding: 14px; } .poe-import-actions button { width: 100%; } }

@@ -1,0 +1,79 @@
+{
+  "valid": {
+    "schema": "map-exclusions",
+    "version": 1,
+    "game": "poe",
+    "idNamespace": "poe.re-map-token",
+    "name": "PoB Codes map checks",
+    "excludeIds": [
+      246480838,
+      -2064669900
+    ]
+  },
+  "mixedUnknown": {
+    "schema": "map-exclusions",
+    "version": 1,
+    "game": "poe",
+    "idNamespace": "poe.re-map-token",
+    "name": "PoB Codes map checks",
+    "excludeIds": [
+      246480838,
+      123456789
+    ]
+  },
+  "allUnknown": {
+    "schema": "map-exclusions",
+    "version": 1,
+    "game": "poe",
+    "idNamespace": "poe.re-map-token",
+    "name": "PoB Codes map checks",
+    "excludeIds": [
+      123456789
+    ]
+  },
+  "extraKey": {
+    "schema": "map-exclusions",
+    "version": 1,
+    "game": "poe",
+    "idNamespace": "poe.re-map-token",
+    "name": "PoB Codes map checks",
+    "excludeIds": [
+      246480838,
+      -2064669900
+    ],
+    "source": "pob.codes"
+  },
+  "unsafeName": {
+    "schema": "map-exclusions",
+    "version": 1,
+    "game": "poe",
+    "idNamespace": "poe.re-map-token",
+    "name": "__proto__",
+    "excludeIds": [
+      246480838,
+      -2064669900
+    ]
+  },
+  "collision": {
+    "schema": "map-exclusions",
+    "version": 1,
+    "game": "poe",
+    "idNamespace": "poe.re-map-token",
+    "name": "Existing",
+    "excludeIds": [
+      246480838,
+      -2064669900
+    ]
+  },
+  "oversizedName": {
+    "schema": "map-exclusions",
+    "version": 1,
+    "game": "poe",
+    "idNamespace": "poe.re-map-token",
+    "name": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "excludeIds": [
+      246480838,
+      -2064669900
+    ]
+  }
+}
