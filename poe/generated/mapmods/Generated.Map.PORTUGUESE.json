@@ -158,7 +158,7 @@
         },
         {
             "id": -1358177810,
-            "regex": "oub",
+            "regex": "rou",
             "rawText": "Monstros roubam cargas de Poder, Frenesi e Tolerância ao Acertarem",
             "generalizedText": "^monstros roubam cargas de poder, frenesi e tolerancia ao acertarem$",
             "options": {
@@ -194,7 +194,7 @@
         },
         {
             "id": -1204380788,
-            "regex": "^ata",
+            "regex": "^ataq",
             "rawText": "Ataques dos Monstros têm (25-60)% de chance de Empalar ao Acertar",
             "generalizedText": "^ataques dos monstros tem #% de chance de empalar ao acertar$",
             "options": {
@@ -254,7 +254,7 @@
         },
         {
             "id": -1088873049,
-            "regex": "ada$",
+            "regex": "nico c",
             "rawText": "Chefe Único causa Dano aumentado em (15-25)%|Chefe Único tem (20-30)% de sua Velocidade de Conjuração aumentada",
             "generalizedText": "^chefe unico causa dano aumentado em #%$|^chefe unico tem #% de sua velocidade de conjuracao aumentada$",
             "options": {
@@ -278,7 +278,7 @@
         },
         {
             "id": -999805715,
-            "regex": "ura$",
+            "regex": "^cha",
             "rawText": "Chance de Bloqueio dos Jogadores reduzida em (20-40)%|Jogadores têm (20-30)% menos Armadura",
             "generalizedText": "^chance de bloqueio dos jogadores reduzida em #%$|^jogadores tem #% menos armadura$",
             "options": {
@@ -290,7 +290,7 @@
         },
         {
             "id": -949334443,
-            "regex": "tear",
+            "regex": "^proj",
             "rawText": "Habilidades dos Monstros Ricocheteiam 3 vezes mais|Projéteis dos Monstros podem Ricochetear ao colidir com o Terreno",
             "generalizedText": "^habilidades dos monstros ricocheteiam # vezes mais$|^projeteis dos monstros podem ricochetear ao colidir com o terreno$",
             "options": {
@@ -314,7 +314,7 @@
         },
         {
             "id": -938285245,
-            "regex": "gico$",
+            "regex": "uprimo",
             "rawText": "Monstros têm +100% de chance de Suprimor Dano Mágico|35% mais Mapas encontrados na Área",
             "generalizedText": "^monstros tem #% de chance de suprimor dano magico$|^#% mais mapas encontrados na area$",
             "options": {
@@ -374,7 +374,7 @@
         },
         {
             "id": -763914456,
-            "regex": "das$",
+            "regex": "es g",
             "rawText": "Jogadores ganham (30-50)% de Cargas de Frasco reduzidas",
             "generalizedText": "^jogadores ganham #% de cargas de frasco reduzidas$",
             "options": {
@@ -398,7 +398,7 @@
         },
         {
             "id": -694214737,
-            "regex": "s aos m",
+            "regex": "aos m",
             "rawText": "+(15-25)% de Resistência a Caos aos Monstros|+(20-40)% de Resistência Elemental aos Monstros",
             "generalizedText": "^#% de resistencia a caos aos monstros$|^#% de resistencia elemental aos monstros$",
             "options": {
@@ -494,7 +494,7 @@
         },
         {
             "id": -481946502,
-            "regex": "^hab",
+            "regex": "^ha",
             "rawText": "Habilidades dos Monstros Ricocheteiam 2 vezes mais",
             "generalizedText": "^habilidades dos monstros ricocheteiam # vezes mais$",
             "options": {
@@ -518,7 +518,7 @@
         },
         {
             "id": -268547495,
-            "regex": "gico$",
+            "regex": "uprimo",
             "rawText": "Monstros têm +(30-60)% de chance de Suprimor Dano Mágico",
             "generalizedText": "^monstros tem #% de chance de suprimor dano magico$",
             "options": {
@@ -530,7 +530,7 @@
         },
         {
             "id": -258709095,
-            "regex": "sico p",
+            "regex": "aos m",
             "rawText": "+50% de Redução de Dano Físico para Monstros|+55% de Resistência Elemental aos Monstros|+35% de Resistência a Caos aos Monstros",
             "generalizedText": "^#% de reducao de dano fisico para monstros$|^#% de resistencia elemental aos monstros$|^#% de resistencia a caos aos monstros$",
             "options": {
@@ -566,7 +566,7 @@
         },
         {
             "id": -210607554,
-            "regex": "nos$",
+            "regex": "aprin",
             "rawText": "Área é habitada por Caprinos",
             "generalizedText": "^area e habitada por caprinos$",
             "options": {
@@ -686,7 +686,7 @@
         },
         {
             "id": -54649013,
-            "regex": "ticos$",
+            "regex": "riticos$",
             "rawText": "Monstros têm (25-45)% de redução do Dano Extra de Golpes Críticos",
             "generalizedText": "^monstros tem #% de reducao do dano extra de golpes criticos$",
             "options": {
@@ -710,7 +710,7 @@
         },
         {
             "id": 10729340,
-            "regex": "hame",
+            "regex": "m def",
             "rawText": "Monstros ganham (21-35)% de Dano Físico como Dano de Caos Extra|Monstros infligem Definhamento por 2 segundos ao Acertar",
             "generalizedText": "^monstros ganham #% de dano fisico como dano de caos extra$|^monstros infligem definhamento por # segundos ao acertar$",
             "options": {
@@ -806,7 +806,7 @@
         },
         {
             "id": 252096506,
-            "regex": "mpos",
+            "regex": "^impo",
             "rawText": "Impossível Drenar dos Monstros",
             "generalizedText": "^impossivel drenar dos monstros$",
             "options": {
@@ -926,7 +926,7 @@
         },
         {
             "id": 707446389,
-            "regex": "em ru",
+            "regex": "m ru",
             "rawText": "Área contém Runas do Exarca Cauterizado",
             "generalizedText": "^area contem runas do exarca cauterizado$",
             "options": {
@@ -998,7 +998,7 @@
         },
         {
             "id": 980061401,
-            "regex": "ios$",
+            "regex": "nios$",
             "rawText": "Área é habitada por Demônios",
             "generalizedText": "^area e habitada por demonios$",
             "options": {
@@ -1034,7 +1034,7 @@
         },
         {
             "id": 1062763755,
-            "regex": "lado$",
+            "regex": "ngelado$",
             "rawText": "Área possui trechos de solo congelado",
             "generalizedText": "^area possui trechos de solo congelado$",
             "options": {
@@ -1058,7 +1058,7 @@
         },
         {
             "id": 1082020744,
-            "regex": "bom",
+            "regex": "naco",
             "rawText": "Área é habitada por Abominações",
             "generalizedText": "^area e habitada por abominacoes$",
             "options": {
@@ -1070,7 +1070,7 @@
         },
         {
             "id": 1101434369,
-            "regex": "ao mal",
+            "regex": "s nao m",
             "rawText": "Jogadores têm efeito de Auras Não Maldição das Habilidades reduzido em (25-60)%",
             "generalizedText": "^jogadores tem efeito de auras nao maldicao das habilidades reduzido em #%$",
             "options": {
@@ -1166,7 +1166,7 @@
         },
         {
             "id": 1333860371,
-            "regex": "teo",
+            "regex": "mete",
             "rawText": "Jogadores são focados por um Meteoro quando usam um Frasco|45% mais Itens Monetários encontrados na Área",
             "generalizedText": "^jogadores sao focados por um meteoro quando usam um frasco$|^#% mais itens monetarios encontrados na area$",
             "options": {
@@ -1202,7 +1202,7 @@
         },
         {
             "id": 1464066514,
-            "regex": "sas$",
+            "regex": "esas$",
             "rawText": "Jogadores têm (30-25)% menos Defesas|35% mais Escaravelhos encontrados na Área",
             "generalizedText": "^jogadores tem #% menos defesas$|^#% mais escaravelhos encontrados na area$",
             "options": {
@@ -1286,7 +1286,7 @@
         },
         {
             "id": 1598599541,
-            "regex": "com gr",
+            "regex": "om gr",
             "rawText": "Jogadores são Amaldiçoados com Grilhões Temporais",
             "generalizedText": "^jogadores sao amaldicoados com grilhoes temporais$",
             "options": {
@@ -1310,7 +1310,7 @@
         },
         {
             "id": 1665221611,
-            "regex": "nuc",
+            "regex": "m nu",
             "rawText": "Monstros Raros têm um Núcleo Volátil|53% mais Escaravelhos encontrados na Área",
             "generalizedText": "^monstros raros tem um nucleo volatil$|^#% mais escaravelhos encontrados na area$",
             "options": {
@@ -1370,7 +1370,7 @@
         },
         {
             "id": 1861748274,
-            "regex": "^au",
+            "regex": "^aur",
             "rawText": "Auras das habilidades do jogador que afetam os aliados também afetam os inimigos",
             "generalizedText": "^auras das habilidades do jogador que afetam os aliados tambem afetam os inimigos$",
             "options": {
@@ -1382,7 +1382,7 @@
         },
         {
             "id": 1882321261,
-            "regex": "com fr",
+            "regex": "om fr",
             "rawText": "Jogadores são Amaldiçoados com Fraqueza Elemental",
             "generalizedText": "^jogadores sao amaldicoados com fraqueza elemental$",
             "options": {
@@ -1418,7 +1418,7 @@
         },
         {
             "id": 2080363489,
-            "regex": "iam$",
+            "regex": "am$",
             "rawText": "Todo Dano de Acertos dos Monstros Incendeiam",
             "generalizedText": "^todo dano de acertos dos monstros incendeiam$",
             "options": {
@@ -1978,19 +1978,9 @@
                 -1139261923,
                 472035128
             ],
-            "regex": "poc",
-            "weight": 3,
+            "regex": "pocas",
+            "weight": 5,
             "count": 2
-        },
-        "-1139261923:472035128:1538178254": {
-            "ids": [
-                -1139261923,
-                472035128,
-                1538178254
-            ],
-            "regex": "cas de",
-            "weight": 8,
-            "count": 3
         },
         "-1099682289:-128171261:156744008:472035128:1062763755:1211148661": {
             "ids": [
@@ -2129,6 +2119,15 @@
             "weight": 14,
             "count": 3
         },
+        "-949334443:1313044496": {
+            "ids": [
+                -949334443,
+                1313044496
+            ],
+            "regex": "s monstros r",
+            "weight": 14,
+            "count": 2
+        },
         "-938285245:-268547495": {
             "ids": [
                 -938285245,
@@ -2215,15 +2214,6 @@
             "weight": 15,
             "count": 3
         },
-        "-931745379:1551446200": {
-            "ids": [
-                -931745379,
-                1551446200
-            ],
-            "regex": "tes a",
-            "weight": 7,
-            "count": 2
-        },
         "-931745379:10729340": {
             "ids": [
                 -931745379,
@@ -2243,6 +2233,15 @@
             "regex": "stros i",
             "weight": 9,
             "count": 4
+        },
+        "-931745379:1551446200": {
+            "ids": [
+                -931745379,
+                1551446200
+            ],
+            "regex": "entes a",
+            "weight": 9,
+            "count": 2
         },
         "-875993462:1541760497": {
             "ids": [
@@ -2286,8 +2285,8 @@
                 -694214737,
                 -258709095
             ],
-            "regex": "s aos m",
-            "weight": 9,
+            "regex": "aos m",
+            "weight": 7,
             "count": 2
         },
         "-645418310:-54649013": {
@@ -2343,8 +2342,8 @@
                 1211148661,
                 1932675161
             ],
-            "regex": "ech",
-            "weight": 3,
+            "regex": "trec",
+            "weight": 4,
             "count": 4
         },
         "-128171261:1062763755:1211148661": {
@@ -2566,8 +2565,8 @@
                 647925005,
                 1882321261
             ],
-            "regex": "com fr",
-            "weight": 8,
+            "regex": "om fr",
+            "weight": 7,
             "count": 2
         },
         "647925005:1598599541": {
@@ -2575,8 +2574,8 @@
                 647925005,
                 1598599541
             ],
-            "regex": "com gr",
-            "weight": 8,
+            "regex": "om gr",
+            "weight": 7,
             "count": 2
         },
         "670500310:1541760497": {
@@ -2602,8 +2601,8 @@
                 972998450,
                 1313044496
             ],
-            "regex": "ao mor",
-            "weight": 8,
+            "regex": "ao morr",
+            "weight": 9,
             "count": 2
         },
         "1014295028:1578069823": {

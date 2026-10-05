@@ -1,7 +1,7 @@
 {
     "Escaravelho Atormentado": {
         "name": "Escaravelho Atormentado",
-        "regex": "crime",
+        "regex": "crim",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJUb3JtZW50Iiwic2NhbGUiOjF9XQ/8c43bf8c64/LesserScarabTorment.png",
         "flavourText": "Os crimes deles em vida assombram você na morte.",
         "description": "Área assombrada por 4 Espíritos Atormentados adicionais|Espíritos Atormentados na área têm 10% de chance de|serem libertados quando o monstro possuído for morto|e um monstro possuído é desenterrado"
@@ -50,14 +50,14 @@
     },
     "Escaravelho Chifrudo do Despertar": {
         "name": "Escaravelho Chifrudo do Despertar",
-        "regex": "uise",
+        "regex": "ise",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9TdXBlclNjYXJhYjQiLCJzY2FsZSI6MX1d/c939905663/SuperScarab4.png",
         "flavourText": "O Atlas pode ser qualquer coisa.. e tudo o que você quiser.",
         "description": "Áreas de nível 16+ contêm chefes de um Convite da Conhecedora aleatório"
     },
     "Escaravelho Chifrudo do Nêmesis": {
         "name": "Escaravelho Chifrudo do Nêmesis",
-        "regex": "mesi",
+        "regex": "neme",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9TdXBlclNjYXJhYjIiLCJzY2FsZSI6MX1d/c4f92c444d/SuperScarab2.png",
         "flavourText": "A glória atrai cada vez mais sua própria destruição.",
         "description": "Monstros Raros na Área têm 2 Modificadores adicionais"
@@ -99,7 +99,7 @@
     },
     "Escaravelho Kalguurano do Enriquecimento": {
         "name": "Escaravelho Kalguurano do Enriquecimento",
-        "regex": "lsa",
+        "regex": "nr",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYlNldHRsZXJzIiwic2NhbGUiOjF9XQ/62d3e05936/Tier4ScarabSettlers.png",
         "flavourText": "O minério está vivo e pulsa, e não está feliz com os seus esforços.",
         "description": "Monstros que protegem depósitos de minério têm a dificuldade aumentada, e|os depósitos de minério e recompensas contêm minério aumentado em 15%|para cada depósito de minério concluído na área"
@@ -127,7 +127,7 @@
     },
     "Escaravelho Trarthano": {
         "name": "Escaravelho Trarthano",
-        "regex": "vence",
+        "regex": "venc",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJNZXJjZW5hcmllcyIsInNjYWxlIjoxfV0/2d075bbafc/LesserScarabMercenaries.png",
         "flavourText": "O prêmio fica com o vencedor.",
         "description": "Área é habitada por um Mercenário"
@@ -162,7 +162,7 @@
     },
     "Escaravelho da Adivinhação do Cláustro": {
         "name": "Escaravelho da Adivinhação do Cláustro",
-        "regex": "oenc",
+        "regex": "lau",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJEaXZpbmF0aW9uIiwic2NhbGUiOjF9XQ/20ff060a8d/LesserScarabDivination.png",
         "flavourText": "Nenhuma doença pode ser contida para sempre.",
         "description": "Área contém de 8 a 12 grupos de Devotos de Doedre|Devotos de Doedre têm 1% de chance adicional de derrubar um Baralho Fechado."
@@ -225,14 +225,14 @@
     },
     "Escaravelho da Cartografia do Escalonamento": {
         "name": "Escaravelho da Cartografia do Escalonamento",
-        "regex": "rtun",
+        "regex": "tun",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJNYXBzIiwic2NhbGUiOjF9XQ/e7d11bcc5b/LesserScarabMaps.png",
         "flavourText": "A oportunidade prospera onde os sonhos são mais perigosos.",
         "description": "Mapas encontrados na Área aumentados em 10% por cada Modificador de Mapa afetando a Área"
     },
     "Escaravelho da Cartografia do Risco": {
         "name": "Escaravelho da Cartografia do Risco",
-        "regex": "exo",
+        "regex": "lex",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJNYXBzIiwic2NhbGUiOjF9XQ/b41df1ff07/NormalScarabMaps.png",
         "flavourText": "O que vemos no espelho só pode ser o nosso próprio reflexo.",
         "description": "Área tem 2 modificadores adicionais aleatórios"
@@ -267,28 +267,28 @@
     },
     "Escaravelho da Emboscada": {
         "name": "Escaravelho da Emboscada",
-        "regex": "ma em",
+        "regex": "speran",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJTdHJvbmdib3hlcyIsInNjYWxlIjoxfV0/137917584a/LesserScarabStrongboxes.png",
         "flavourText": "Ainda é uma emboscada se você está esperando por ela?",
         "description": "Área contém 4 caixas-forte adicionais"
     },
     "Escaravelho da Emboscada da Contenção": {
         "name": "Escaravelho da Emboscada da Contenção",
-        "regex": "sme",
+        "regex": "sg",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYlN0cm9uZ2JveGVzIiwic2NhbGUiOjF9XQ/da665a65ee/Tier4ScarabStrongboxes.png",
         "flavourText": "O silêncio desmente a desgraça que fica à espreita.",
         "description": "Área contém vários Cofres adicionais|Habitantes da Área estão à espreita"
     },
     "Escaravelho da Emboscada da Potência": {
         "name": "Escaravelho da Emboscada da Potência",
-        "regex": "serr",
+        "regex": "pot",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9HcmVhdGVyU2NhcmFiU3Ryb25nYm94ZXMiLCJzY2FsZSI6MX1d/c2cb4efc18/GreaterScarabStrongboxes.png",
         "flavourText": "O serralheiro sonha em construir uma caixa melhor.",
         "description": "Efeito dos Modificadores Explícitos em Cofres na Área aumentado em 75%"
     },
     "Escaravelho da Emboscada do Discernimento": {
         "name": "Escaravelho da Emboscada do Discernimento",
-        "regex": "oio",
+        "regex": "sep",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRUaWVyNFNjYXJhYlN0cm9uZ2JveGVzIiwic2NhbGUiOjF9XQ/72722370df/AltTier4ScarabStrongboxes.png",
         "flavourText": "Um olhar atento sabe separar o trigo do joio. ",
         "description": "Cofres na Área são mais propensos a serem de variedades mais raras"
@@ -309,7 +309,7 @@
     },
     "Escaravelho da Essência da Adaptação": {
         "name": "Escaravelho da Essência da Adaptação",
-        "regex": "ecoe",
+        "regex": "dap",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRUaWVyNFNjYXJhYkVzc2VuY2UiLCJzY2FsZSI6MX1d/56560d691e/AltTier4ScarabEssence.png",
         "flavourText": "A rede cristalina se expande em direções estranhas à mente mortal.",
         "description": "Monstros aprisionados liberados nas áreas concedem um Modificador de Essência aleatório para outros Monstros Aprisionados na Área|Monstros Aprisionados nas Áreas têm Dificuldade e Recompensa aumentadas|por cada Modificador de Essências"
@@ -365,7 +365,7 @@
     },
     "Escaravelho da Expedição da Runificação": {
         "name": "Escaravelho da Expedição da Runificação",
-        "regex": "uilo",
+        "regex": "uil",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJFeHBlZGl0aW9uIiwic2NhbGUiOjF9XQ/a751f91a8e/NormalScarabExpedition.png",
         "flavourText": "Aquilo que veio das estrelas anseia por retornar.",
         "description": "Encontros Expedition na Área têm quantidade de|Marcadores de Monstros Rúnicos aumentada em 100%"
@@ -484,7 +484,7 @@
     },
     "Escaravelho da Influência do Criador": {
         "name": "Escaravelho da Influência do Criador",
-        "regex": "ousa",
+        "regex": "ous",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJTaGFwZXIiLCJzY2FsZSI6MX1d/caf0ac9307/LesserScarabShaper.png",
         "flavourText": "Um mar de estrelas aguarda os que ousam imaginar.",
         "description": "Adiciona o resultado da Influência do Criador à Área"
@@ -582,7 +582,7 @@
     },
     "Escaravelho do Abismo da Descida": {
         "name": "Escaravelho do Abismo da Descida",
-        "regex": "nvid",
+        "regex": "sci",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYkFieXNzIiwic2NhbGUiOjF9XQ/c1d1da69d6/Tier4ScarabAbyss.png",
         "flavourText": "Eles te convidam a conhecê-los e a se juntar a eles.",
         "description": "Área contém uma [AbyssalDepths|Profundeza Abissal]"
@@ -666,7 +666,7 @@
     },
     "Escaravelho do Delírio da Neurose": {
         "name": "Escaravelho do Delírio da Neurose",
-        "regex": "eur",
+        "regex": "neu",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRHcmVhdGVyU2NhcmFiRGVsaXJpdW0iLCJzY2FsZSI6MX1d/5690762715/AltGreaterScarabDelirium.png",
         "flavourText": "Sorrisos cheios de dentes brilham no escuro.",
         "description": "Encontros de Delírio na área contêm todos os chefes do Delírio únicos|A contagem de tipos de recompensa do Delírio na área aumenta em 1 ao derrotar um chefe do Delírio único|Só pode ser usado com mapas de nível 11+"
@@ -687,7 +687,7 @@
     },
     "Escaravelho do Destro": {
         "name": "Escaravelho do Destro",
-        "regex": "coro",
+        "regex": "roa",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRHcmVhdGVyU2NhcmFiTWlzYyIsInNjYWxlIjoxfV0/4b55da6494/AltGreaterScarabMisc.png",
         "flavourText": "Vamos jogar. Você escolhe coroa?",
         "description": "Modificadores de sufixo de área têm o efeito aumentado em 100%|Modificadores de prefixo de área não têm efeito"
@@ -715,7 +715,7 @@
     },
     "Escaravelho do Domínio dos Terrores": {
         "name": "Escaravelho do Domínio dos Terrores",
-        "regex": "mio,",
+        "regex": "ror",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYkRvbWluYXRpb24iLCJzY2FsZSI6MX1d/0d55e72414/Tier4ScarabDomination.png",
         "flavourText": "Seja qual for o prêmio, lute por ele.",
         "description": "Altares na Área são guardados por um Chefe do Atlas|Modificadores do Chefe Final do mapa também são aplicados a estes Chefes do Atlas"
@@ -750,14 +750,14 @@
     },
     "Escaravelho do Sinistro": {
         "name": "Escaravelho do Sinistro",
-        "regex": "sini",
+        "regex": "nis",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9HcmVhdGVyU2NhcmFiTWlzYzIiLCJzY2FsZSI6MX1d/6f752909bb/GreaterScarabMisc2.png",
         "flavourText": "Vamos jogar. Você escolhe cara?",
         "description": "Modificadores de prefixo de área têm o efeito aumentado em 100%|Modificadores de sufixo de área não têm efeito"
     },
     "Escaravelho do Ultimato": {
         "name": "Escaravelho do Ultimato",
-        "regex": "mom",
+        "regex": "saf",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJVbHRpbWF0dW0iLCJzY2FsZSI6MX1d/b1b423625d/LesserScarabUltimatum.png",
         "flavourText": "Um desafio pode ser solicitado a qualquer momento.",
         "description": "Área contém um Encontro do Ultimato"

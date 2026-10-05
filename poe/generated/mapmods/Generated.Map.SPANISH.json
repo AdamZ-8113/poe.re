@@ -62,7 +62,7 @@
         },
         {
             "id": -1818595967,
-            "regex": "eador$",
+            "regex": "tan t",
             "rawText": "Los monstruos raros del área están tocados por el Creador",
             "generalizedText": "^los monstruos raros del area estan tocados por el creador$",
             "options": {
@@ -98,7 +98,7 @@
         },
         {
             "id": -1629200695,
-            "regex": "tacu",
+            "regex": "nest",
             "rawText": "El área contiene monstruos inestables de tentáculos",
             "generalizedText": "^el area contiene monstruos inestables de tentaculos$",
             "options": {
@@ -134,7 +134,7 @@
         },
         {
             "id": -1473394034,
-            "regex": "ga$",
+            "regex": "rga$",
             "rawText": "Los jugadores tienen un (20-40)% menos de velocidad de recuperación del tiempo de recarga",
             "generalizedText": "^los jugadores tienen un #% menos de velocidad de recuperacion del tiempo de recarga$",
             "options": {
@@ -146,7 +146,7 @@
         },
         {
             "id": -1430865583,
-            "regex": "ico$",
+            "regex": "sico$",
             "rawText": "Los monstruos raros tienen espinas físicas que reflejan 1500 de daño físico|Los monstruos raros tienen espinas elementales que reflejan 2500 de daño elemental|En el área caen un 47% menos de objetos monetarios",
             "generalizedText": "^los monstruos raros tienen espinas fisicas que reflejan # de dano fisico$|^los monstruos raros tienen espinas elementales que reflejan # de dano elemental$|^en el area caen un #% menos de objetos monetarios$",
             "options": {
@@ -254,7 +254,7 @@
         },
         {
             "id": -1088873049,
-            "regex": "ene v",
+            "regex": "ne v",
             "rawText": "El jefe único inflige el daño aumentado un (15-25)%|El jefe único tiene velocidades de ataque y de lanzamiento de hechizos aumentadas un (20-30)%",
             "generalizedText": "^el jefe unico inflige el dano aumentado un #%$|^el jefe unico tiene velocidades de ataque y de lanzamiento de hechizos aumentadas un #%$",
             "options": {
@@ -266,7 +266,7 @@
         },
         {
             "id": -1047451686,
-            "regex": "cia$",
+            "regex": "ancia$",
             "rawText": "El área está habitada por monstruos con ataques a distancia",
             "generalizedText": "^el area esta habitada por monstruos con ataques a distancia$",
             "options": {
@@ -278,7 +278,7 @@
         },
         {
             "id": -999805715,
-            "regex": "ura$",
+            "regex": "dura$",
             "rawText": "Los jugadores tienen Probabilidad de Bloquear reducida un (20-40)%|Los jugadores tienen un (20-30)% menos de armadura",
             "generalizedText": "^los jugadores tienen probabilidad de bloquear reducida un #%$|^los jugadores tienen un #% menos de armadura$",
             "options": {
@@ -290,7 +290,7 @@
         },
         {
             "id": -949334443,
-            "regex": "no$",
+            "regex": "olisi",
             "rawText": "Las habilidades de los monstruos se encadenan 3 veces adicionales|Los proyectiles de los monstruos se pueden encadenar al colisionar con el terreno",
             "generalizedText": "^las habilidades de los monstruos se encadenan # veces adicionales$|^los proyectiles de los monstruos se pueden encadenar al colisionar con el terreno$",
             "options": {
@@ -362,7 +362,7 @@
         },
         {
             "id": -875993462,
-            "regex": "ida$",
+            "regex": "vida$",
             "rawText": "Los monstruos tienen un (90-100)% más de vida|En el área caen un 47% menos de objetos monetarios",
             "generalizedText": "^los monstruos tienen un #% mas de vida$|^en el area caen un #% menos de objetos monetarios$",
             "options": {
@@ -458,7 +458,7 @@
         },
         {
             "id": -617888797,
-            "regex": "uma",
+            "regex": "huma",
             "rawText": "El área está habitada por humanoides",
             "generalizedText": "^el area esta habitada por humanoides$",
             "options": {
@@ -470,7 +470,7 @@
         },
         {
             "id": -580302769,
-            "regex": "^dan",
+            "regex": "^da",
             "rawText": "Daño de los monstruos aumentado un (14-40)%",
             "generalizedText": "^dano de los monstruos aumentado un #%$",
             "options": {
@@ -542,7 +542,7 @@
         },
         {
             "id": -235013251,
-            "regex": "ico$",
+            "regex": "sico$",
             "rawText": "Los monstruos raros tienen espinas físicas que reflejan (400-800) de daño físico",
             "generalizedText": "^los monstruos raros tienen espinas fisicas que reflejan # de dano fisico$",
             "options": {
@@ -578,7 +578,7 @@
         },
         {
             "id": -172005981,
-            "regex": "ida$",
+            "regex": "vida$",
             "rawText": "Los monstruos tienen un (20-49)% más de vida",
             "generalizedText": "^los monstruos tienen un #% mas de vida$",
             "options": {
@@ -602,7 +602,7 @@
         },
         {
             "id": -128171261,
-            "regex": "nado$",
+            "regex": "de suelo p",
             "rawText": "El Área tiene zonas de suelo profanado",
             "generalizedText": "^el area tiene zonas de suelo profanado$",
             "options": {
@@ -638,7 +638,7 @@
         },
         {
             "id": -106750911,
-            "regex": "ene s",
+            "regex": "ne s",
             "rawText": "El jefe único tiene su vida aumentada un (25-35)%|El Jefe Único tiene su Área de Efecto aumentada un (45-70)%",
             "generalizedText": "^el jefe unico tiene su vida aumentada un #%$|^el jefe unico tiene su area de efecto aumentada un #%$",
             "options": {
@@ -698,7 +698,7 @@
         },
         {
             "id": -26777606,
-            "regex": "go$",
+            "regex": "ego$",
             "rawText": "Los monstruos infligen el (50-110)% de su daño físico extra como fuego",
             "generalizedText": "^los monstruos infligen el #% de su dano fisico extra como fuego$",
             "options": {
@@ -734,7 +734,7 @@
         },
         {
             "id": 58884108,
-            "regex": "etos$",
+            "regex": "letos$",
             "rawText": "El área está habitada por esqueletos",
             "generalizedText": "^el area esta habitada por esqueletos$",
             "options": {
@@ -746,7 +746,7 @@
         },
         {
             "id": 127168403,
-            "regex": "caos$",
+            "regex": "tra de c",
             "rawText": "Los monstruos ganan el (80-100)% de su daño físico como daño extra de caos",
             "generalizedText": "^los monstruos ganan el #% de su dano fisico como dano extra de caos$",
             "options": {
@@ -758,7 +758,7 @@
         },
         {
             "id": 151806012,
-            "regex": "zado$",
+            "regex": "o neu",
             "rawText": "Los jugadores tienen -(10-20)% a la cantidad de daño de hechizos atenuado neutralizado|Los Monstruos tienen Precisión aumentada un (30-50)%",
             "generalizedText": "^los jugadores tienen -#% a la cantidad de dano de hechizos atenuado neutralizado$|^los monstruos tienen precision aumentada un #%$",
             "options": {
@@ -902,7 +902,7 @@
         },
         {
             "id": 647925005,
-            "regex": "dad$",
+            "regex": "idad$",
             "rawText": "Los jugadores tienen la maldición de Vulnerabilidad|Los jugadores tienen la maldición de Cadenas temporales|Los jugadores tienen la maldición de Debilidad elemental",
             "generalizedText": "^los jugadores tienen la maldicion de vulnerabilidad$|^los jugadores tienen la maldicion de cadenas temporales$|^los jugadores tienen la maldicion de debilidad elemental$",
             "options": {
@@ -914,7 +914,7 @@
         },
         {
             "id": 670500310,
-            "regex": "ase$",
+            "regex": "se$",
             "rawText": "Los monstruos no pueden ser aturdidos|La velocidad de acción de los monstruos no se puede modificar por debajo del valor base|La velocidad de movimiento de los monstruos no se puede modificar por debajo del valor base",
             "generalizedText": "^los monstruos no pueden ser aturdidos$|^la velocidad de accion de los monstruos no se puede modificar por debajo del valor base$|^la velocidad de movimiento de los monstruos no se puede modificar por debajo del valor base$",
             "options": {
@@ -926,7 +926,7 @@
         },
         {
             "id": 707446389,
-            "regex": "sador$",
+            "regex": "ne r",
             "rawText": "El área contiene runas del Exarca abrasador",
             "generalizedText": "^el area contiene runas del exarca abrasador$",
             "options": {
@@ -938,7 +938,7 @@
         },
         {
             "id": 775962019,
-            "regex": "gend",
+            "regex": "enge",
             "rawText": "El área está habitada por brujas del mar y sus engendros",
             "generalizedText": "^el area esta habitada por brujas del mar y sus engendros$",
             "options": {
@@ -974,7 +974,7 @@
         },
         {
             "id": 955801458,
-            "regex": "cos$",
+            "regex": "nicos$",
             "rawText": "El área contiene dos jefes únicos",
             "generalizedText": "^el area contiene dos jefes unicos$",
             "options": {
@@ -1022,7 +1022,7 @@
         },
         {
             "id": 1061710360,
-            "regex": "sier",
+            "regex": "nsan",
             "rawText": "Los jugadores reciben ataques de sierras ensangrentadas|En el área caen un 47% menos de objetos monetarios",
             "generalizedText": "^los jugadores reciben ataques de sierras ensangrentadas$|^en el area caen un #% menos de objetos monetarios$",
             "options": {
@@ -1034,7 +1034,7 @@
         },
         {
             "id": 1062763755,
-            "regex": "hado$",
+            "regex": "rchado$",
             "rawText": "El Área tiene zonas de suelo escarchado",
             "generalizedText": "^el area tiene zonas de suelo escarchado$",
             "options": {
@@ -1058,7 +1058,7 @@
         },
         {
             "id": 1082020744,
-            "regex": "bom",
+            "regex": "iones$",
             "rawText": "El Área está habitada por Abominaciones",
             "generalizedText": "^el area esta habitada por abominaciones$",
             "options": {
@@ -1094,7 +1094,7 @@
         },
         {
             "id": 1202132179,
-            "regex": "dad$",
+            "regex": "idad$",
             "rawText": "Los jugadores tienen la maldición de Vulnerabilidad",
             "generalizedText": "^los jugadores tienen la maldicion de vulnerabilidad$",
             "options": {
@@ -1106,7 +1106,7 @@
         },
         {
             "id": 1205583947,
-            "regex": "ndo$",
+            "regex": "otale",
             "rawText": "Los jugadores tienen la recuperación de vida, maná y escudo de energía totales máximos de la absorción reducida un (60-50)% por segundo",
             "generalizedText": "^los jugadores tienen la recuperacion de vida, mana y escudo de energia totales maximos de la absorcion reducida un #% por segundo$",
             "options": {
@@ -1202,7 +1202,7 @@
         },
         {
             "id": 1464066514,
-            "regex": "sas$",
+            "regex": "nsas$",
             "rawText": "Los jugadores tienen un (30-25)% menos de defensas|En el área caen un 35% más de escarabajos",
             "generalizedText": "^los jugadores tienen un #% menos de defensas$|^en el area caen un #% mas de escarabajos$",
             "options": {
@@ -1238,7 +1238,7 @@
         },
         {
             "id": 1538178254,
-            "regex": "into$",
+            "regex": "ene p",
             "rawText": "El área contiene peligros del laberinto",
             "generalizedText": "^el area contiene peligros del laberinto$",
             "options": {
@@ -1250,7 +1250,7 @@
         },
         {
             "id": 1541760497,
-            "regex": "ida$",
+            "regex": "vida$",
             "rawText": "Los monstruos no pueden ser aturdidos|Los monstruos tienen un (15-30)% más de vida",
             "generalizedText": "^los monstruos no pueden ser aturdidos$|^los monstruos tienen un #% mas de vida$",
             "options": {
@@ -1286,7 +1286,7 @@
         },
         {
             "id": 1598599541,
-            "regex": "rales$",
+            "regex": "orales$",
             "rawText": "Los jugadores tienen la maldición de Cadenas temporales",
             "generalizedText": "^los jugadores tienen la maldicion de cadenas temporales$",
             "options": {
@@ -1310,7 +1310,7 @@
         },
         {
             "id": 1665221611,
-            "regex": "nuc",
+            "regex": "leos",
             "rawText": "Los monstruos raros tienen núcleos volátiles|En el área caen un 53% más de escarabajos",
             "generalizedText": "^los monstruos raros tienen nucleos volatiles$|^en el area caen un #% mas de escarabajos$",
             "options": {
@@ -1346,7 +1346,7 @@
         },
         {
             "id": 1756122717,
-            "regex": "rfi",
+            "regex": "terf",
             "rawText": "La Especialista interfiere con los jugadores",
             "generalizedText": "^la especialista interfiere con los jugadores$",
             "options": {
@@ -1358,7 +1358,7 @@
         },
         {
             "id": 1799781772,
-            "regex": "lo$",
+            "regex": "elo$",
             "rawText": "Los monstruos infligen el (50-110)% de su daño físico extra como hielo",
             "generalizedText": "^los monstruos infligen el #% de su dano fisico extra como hielo$",
             "options": {
@@ -1370,7 +1370,7 @@
         },
         {
             "id": 1861748274,
-            "regex": "gos$",
+            "regex": "igos$",
             "rawText": "Las auras de las habilidades de los jugadores que afectan a los aliados también afectan a los enemigos",
             "generalizedText": "^las auras de las habilidades de los jugadores que afectan a los aliados tambien afectan a los enemigos$",
             "options": {
@@ -1418,7 +1418,7 @@
         },
         {
             "id": 2080363489,
-            "regex": "ma$",
+            "regex": "ema$",
             "rawText": "Todo el daño de los golpes de los monstruos siempre quema",
             "generalizedText": "^todo el dano de los golpes de los monstruos siempre quema$",
             "options": {
@@ -1442,7 +1442,7 @@
         },
         {
             "id": 2122294281,
-            "regex": "cieg",
+            "regex": "ieg",
             "rawText": "Los monstruos ciegan con cada golpe",
             "generalizedText": "^los monstruos ciegan con cada golpe$",
             "options": {
@@ -1454,7 +1454,7 @@
         },
         {
             "id": 2132856290,
-            "regex": "yo$",
+            "regex": "ayo$",
             "rawText": "Los monstruos infligen el (50-110)% de su daño físico extra como rayo",
             "generalizedText": "^los monstruos infligen el #% de su dano fisico extra como rayo$",
             "options": {
@@ -1497,16 +1497,6 @@
             "regex": "aros d",
             "weight": 8,
             "count": 2
-        },
-        "-1818595967:972998450:1538178254": {
-            "ids": [
-                -1818595967,
-                972998450,
-                1538178254
-            ],
-            "regex": "ros del",
-            "weight": 9,
-            "count": 3
         },
         "-1772662453:-1204380788:-875993462:-627831782:-166549521:1541760497": {
             "ids": [
@@ -1634,8 +1624,8 @@
                 -1629200695,
                 -1099682289
             ],
-            "regex": "ene m",
-            "weight": 7,
+            "regex": "ne m",
+            "weight": 6,
             "count": 2
         },
         "-1629200695:-26777606:1799781772:2132856290": {
@@ -1676,20 +1666,6 @@
             "weight": 9,
             "count": 6
         },
-        "-1621497665:-938285245:-931745379:357242916:639399394:646965355:1494523238": {
-            "ids": [
-                -1621497665,
-                -938285245,
-                -931745379,
-                357242916,
-                639399394,
-                646965355,
-                1494523238
-            ],
-            "regex": "as de m",
-            "weight": 9,
-            "count": 7
-        },
         "-1621497665:-1094717370:-225071089:357242916:1494523238": {
             "ids": [
                 -1621497665,
@@ -1713,6 +1689,20 @@
             "regex": "nan una",
             "weight": 9,
             "count": 5
+        },
+        "-1621497665:-938285245:-931745379:357242916:639399394:646965355:1494523238": {
+            "ids": [
+                -1621497665,
+                -938285245,
+                -931745379,
+                357242916,
+                639399394,
+                646965355,
+                1494523238
+            ],
+            "regex": "mas de m",
+            "weight": 10,
+            "count": 7
         },
         "-1621497665:357242916:1494523238": {
             "ids": [
@@ -1753,8 +1743,8 @@
                 -235013251,
                 1078205993
             ],
-            "regex": "lejan",
-            "weight": 5,
+            "regex": "flejan",
+            "weight": 6,
             "count": 3
         },
         "-1430865583:-235013251": {
@@ -2341,8 +2331,8 @@
                 10729340,
                 127168403
             ],
-            "regex": "ra de c",
-            "weight": 9,
+            "regex": "tra de c",
+            "weight": 10,
             "count": 2
         },
         "339937661:647925005:1882321261": {
@@ -2351,18 +2341,9 @@
                 647925005,
                 1882321261
             ],
-            "regex": "n de de",
-            "weight": 9,
+            "regex": "n de deb",
+            "weight": 10,
             "count": 3
-        },
-        "339937661:647925005": {
-            "ids": [
-                339937661,
-                647925005
-            ],
-            "regex": "n de de",
-            "weight": 9,
-            "count": 2
         },
         "339937661:647925005:1202132179:1598599541:1882321261": {
             "ids": [
@@ -2375,6 +2356,15 @@
             "regex": "n la mal",
             "weight": 10,
             "count": 5
+        },
+        "339937661:647925005": {
+            "ids": [
+                339937661,
+                647925005
+            ],
+            "regex": "n la mal",
+            "weight": 10,
+            "count": 2
         },
         "339937661:647925005:1202132179:1205583947:1598599541:1882321261": {
             "ids": [
@@ -2422,8 +2412,8 @@
                 647925005,
                 1598599541
             ],
-            "regex": "n de ca",
-            "weight": 9,
+            "regex": "n de cad",
+            "weight": 10,
             "count": 2
         },
         "647925005:1882321261": {

@@ -266,7 +266,7 @@
         },
         {
             "id": -1047451686,
-            "regex": "程",
+            "regex": "多遠",
             "rawText": "區域含有許多遠程怪物",
             "generalizedText": "^區域含有許多遠程怪物$",
             "options": {
@@ -482,7 +482,7 @@
         },
         {
             "id": -539026720,
-            "regex": "^對",
+            "regex": "咒有",
             "rawText": "對怪物的詛咒有 (25-60)% 更少效果",
             "generalizedText": "^對怪物的詛咒有 #% 更少效果$",
             "options": {

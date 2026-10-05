@@ -57,7 +57,7 @@
     },
     "Escarabajo de abismo de cristales": {
         "name": "Escarabajo de abismo de cristales",
-        "regex": "rrem",
+        "regex": "mol",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9HcmVhdGVyU2NhcmFiQWJ5c3MiLCJzY2FsZSI6MX1d/84851bd122/GreaterScarabAbyss.png",
         "flavourText": "Su poder prestado se arremolina en el interior de los espantosos cristales.",
         "description": "Los fosos de los [ContainsAbyss|abismos] del área que no sean el último crean un [AbyssalCrystal|cristal abisal] al cerrarse"
@@ -99,14 +99,14 @@
     },
     "Escarabajo de adivinación del claustro": {
         "name": "Escarabajo de adivinación del claustro",
-        "regex": "clau",
+        "regex": "lau",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJEaXZpbmF0aW9uIiwic2NhbGUiOjF9XQ/20ff060a8d/LesserScarabDivination.png",
         "flavourText": "Ninguna enfermedad se puede contener para siempre.",
         "description": "El área contiene de 8 a 12 grupos de monstruos adicionales de devotos de Doedre|Los devotos de Doedre tienen un 1% de probabilidad adicional de arrojar una baraja apilada"
     },
     "Escarabajo de adversarios": {
         "name": "Escarabajo de adversarios",
-        "regex": "lza",
+        "regex": "lz",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRMZXNzZXJTY2FyYWJNaXNjIiwic2NhbGUiOjF9XQ/ab24a34cd1/AltLesserScarabMisc.png",
         "flavourText": "Se alzan contra ti con animosidad equivalente.",
         "description": "El área contiene 4 grupos de monstruos adicionales con monstruos raros reflejados"
@@ -183,7 +183,7 @@
     },
     "Escarabajo de cartografía de riesgo": {
         "name": "Escarabajo de cartografía de riesgo",
-        "regex": "vemo",
+        "regex": "vem",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJNYXBzIiwic2NhbGUiOjF9XQ/b41df1ff07/NormalScarabMaps.png",
         "flavourText": "Lo que vemos en el espejo solo puede ser nuestro propio reflejo.",
         "description": "El área tiene 2 modificadores aleatorios adicionales"
@@ -197,7 +197,7 @@
     },
     "Escarabajo de cosecha de cornucopia": {
         "name": "Escarabajo de cosecha de cornucopia",
-        "regex": "bol",
+        "regex": "arb",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYkhhcnZlc3QiLCJzY2FsZSI6MX1d/35e8847de2/Tier4ScarabHarvest.png",
         "flavourText": "Cuanto más alto es el árbol, mejor es la fruta.",
         "description": "Si el área contiene el Huerto sagrado, también contendrá hasta 1 semilla de grado 4 adicional de cada tipo, siempre que sea posible"
@@ -211,7 +211,7 @@
     },
     "Escarabajo de delirio": {
         "name": "Escarabajo de delirio",
-        "regex": "ofe",
+        "regex": "nof",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJEZWxpcml1bSIsInNjYWxlIjoxfV0/0b8b887e88/LesserScarabDelirium.png",
         "flavourText": "Un escarabajo totalmente inofensivo que no hace nada.",
         "description": "El área contiene un espejo de delirio"
@@ -232,7 +232,7 @@
     },
     "Escarabajo de delirio de neurosis": {
         "name": "Escarabajo de delirio de neurosis",
-        "regex": "eur",
+        "regex": "onr",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRHcmVhdGVyU2NhcmFiRGVsaXJpdW0iLCJzY2FsZSI6MX1d/5690762715/AltGreaterScarabDelirium.png",
         "flavourText": "Hay sonrisas de muchos dientes brillando en la oscuridad.",
         "description": "Los encuentros de Delirium del área contienen a todos los jefes únicos de Delirium|Los tipos de recompensa de Delirium del área ganan +1 al contador al derrotar a un jefe único de Delirium|Solo se puede utilizar en mapas de grado 11 o superiores"
@@ -302,7 +302,7 @@
     },
     "Escarabajo de emboscada de discernimiento": {
         "name": "Escarabajo de emboscada de discernimiento",
-        "regex": "sepa",
+        "regex": "sep",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRUaWVyNFNjYXJhYlN0cm9uZ2JveGVzIiwic2NhbGUiOjF9XQ/72722370df/AltTier4ScarabStrongboxes.png",
         "flavourText": "Un ojo entrenado separa lo valioso de la basura.",
         "description": "Las cajas fuertes del área tienen más probabilidad de ser de variedades raras"
@@ -330,7 +330,7 @@
     },
     "Escarabajo de esencia de ascenso": {
         "name": "Escarabajo de esencia de ascenso",
-        "regex": "logr",
+        "regex": "cet",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJFc3NlbmNlIiwic2NhbGUiOjF9XQ/3a091b8052/NormalScarabEssence.png",
         "flavourText": "No se podría haber logrado una faceta más perfecta.",
         "description": "Las esencias que caen en el área son de un grado superior"
@@ -365,7 +365,7 @@
     },
     "Escarabajo de expedición de arqueología": {
         "name": "Escarabajo de expedición de arqueología",
-        "regex": "ueo",
+        "regex": "sab",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYkV4cGVkaXRpb24iLCJzY2FsZSI6MX1d/6bd03eec75/Tier4ScarabExpedition.png",
         "flavourText": "La curiosidad lleva a la sabiduría. La sabiduría lleva al poder.",
         "description": "Los remanentes de los encuentros de Expedition del área tienen 2 sufijos y prefijos adicionales"
@@ -400,7 +400,7 @@
     },
     "Escarabajo de fisura de inestabilidad": {
         "name": "Escarabajo de fisura de inestabilidad",
-        "regex": "tors",
+        "regex": "ors",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRMZXNzZXJTY2FyYWJCcmVhY2giLCJzY2FsZSI6MX1d/91af1cf6e9/AltLesserScarabBreach.png",
         "flavourText": "La realidad se distorsiona y se deforma.",
         "description": "El área contiene 2 fisuras inestables adicionales"
@@ -463,7 +463,7 @@
     },
     "Escarabajo de influencia de hordas": {
         "name": "Escarabajo de influencia de hordas",
-        "regex": "deas",
+        "regex": "idea",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9HcmVhdGVyU2NhcmFiRWxkZXIiLCJzY2FsZSI6MX1d/660528eb40/GreaterScarabElder.png",
         "flavourText": "Las ideas no se pueden contener.",
         "description": "Los grupos de monstruos influenciados del área tienen el tamaño del grupo aumentado un 40%"
@@ -505,7 +505,7 @@
     },
     "Escarabajo de legión de oficiales": {
         "name": "Escarabajo de legión de oficiales",
-        "regex": "mand",
+        "regex": "bata",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJMZWdpb24iLCJzY2FsZSI6MX1d/986b842d3f/NormalScarabLegion.png",
         "flavourText": "Hasta un campo de batalla tiene un mando intermedio.",
         "description": "Las facciones de Legion del área tienen 5 sargentos adicionales"
@@ -540,7 +540,7 @@
     },
     "Escarabajo de plaga": {
         "name": "Escarabajo de plaga",
-        "regex": "en…",
+        "regex": "ape",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJCbGlnaHQiLCJzY2FsZSI6MX1d/401222e4f4/LesserScarabBlight.png",
         "flavourText": "Sus apéndices se arrastran y crecen…",
         "description": "El área tiene un encuentro de Blight"
@@ -561,7 +561,7 @@
     },
     "Escarabajo de plaga de vigorización": {
         "name": "Escarabajo de plaga de vigorización",
-        "regex": "dul",
+        "regex": "odu",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRUaWVyNFNjYXJhYkJsaWdodCIsInNjYWxlIjoxfV0/34e07da01c/AltTier4ScarabBlight.png",
         "flavourText": "Revertir la polaridad del modulador de compresión parece producir efectos curiosos...",
         "description": "Las torres potenciadoras de las áreas otorgan dificultad y recompensas aumentadas a los monstruos infestados que están a su alcance"
@@ -617,7 +617,7 @@
     },
     "Escarabajo de tormento": {
         "name": "Escarabajo de tormento",
-        "regex": "mene",
+        "regex": "crim",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJUb3JtZW50Iiwic2NhbGUiOjF9XQ/8c43bf8c64/LesserScarabTorment.png",
         "flavourText": "Sus crímenes en vida te acechan en la muerte.",
         "description": "El área contiene 4 espíritus atormentados adicionales|Los espíritus atormentados del área tienen un 10% de probabilidad|de liberarse cuando mueren los monstruos poseídos|y de desenterrar a un monstruo poseído"
@@ -673,14 +673,14 @@
     },
     "Escarabajo de ultimátum de catalización": {
         "name": "Escarabajo de ultimátum de catalización",
-        "regex": "fab",
+        "regex": "ono",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYlVsdGltYXR1bSIsInNjYWxlIjoxfV0/abfc80cf45/Tier4ScarabUltimatum.png",
         "flavourText": "La mayoría se arrepiente de conocer cómo se fabrica el polvo.",
         "description": "Los encuentros de Ultimatum del área solo ofrecerán catalizadores|como recompensa al dueño del mapa"
     },
     "Escarabajo de ultimátum de duelo": {
         "name": "Escarabajo de ultimátum de duelo",
-        "regex": "url",
+        "regex": "bur",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9HcmVhdGVyU2NhcmFiVWx0aW1hdHVtIiwic2NhbGUiOjF9XQ/be3b513bfe/GreaterScarabUltimatum.png",
         "flavourText": "La victoria es insignificante, y el fracaso será motivo de burla.",
         "description": "Los encuentros de Ultimatum del área siempre conducirán a un jefe único si es posible"
@@ -722,7 +722,7 @@
     },
     "Escarabajo del más allá de resurgencia": {
         "name": "Escarabajo del más allá de resurgencia",
-        "regex": "n ham",
+        "regex": "esur",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRHcmVhdGVyU2NhcmFiQmV5b25kIiwic2NhbGUiOjF9XQ/4e3cafe44b/AltGreaterScarabBeyond.png",
         "flavourText": "Tienen hambre.",
         "description": "Los jefes del más allá que se generan en el área están acompañados por jefes del más allá de otras facciones|Los jefes del más allá del área arrojan la cantidad de objetos monetarios contaminados aumentada un 20%|Los portales del más allá del área tienen la probabilidad de generar un jefe único aumentada un 30%"
@@ -771,14 +771,14 @@
     },
     "Escarabajo titánico de tesoros": {
         "name": "Escarabajo titánico de tesoros",
-        "regex": "a cod",
+        "regex": "ramp",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJVbmlxdWUiLCJzY2FsZSI6MX1d/e2945f5878/NormalScarabUnique.png",
         "flavourText": "La codicia es una trampa de la mente.",
         "description": "Los monstruos únicos del área tienen una recompensa adicional|Los monstruos únicos del área tienen dureza aumentada un 30%"
     },
     "Escarabajo trarthano": {
         "name": "Escarabajo trarthano",
-        "regex": "vence",
+        "regex": "nced",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJNZXJjZW5hcmllcyIsInNjYWxlIjoxfV0/2d075bbafc/LesserScarabMercenaries.png",
         "flavourText": "El vencedor se lleva el botín.",
         "description": "El área está habitada por un mercenario"
