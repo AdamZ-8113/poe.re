@@ -2,7 +2,7 @@
     "tokens": [
         {
             "id": -2064669900,
-            "regex": "^k",
+            "regex": "^ka",
             "rawText": "Kartenboss wird von einem Synthese-Boss begleitet",
             "generalizedText": "^kartenboss wird von einem synthese-boss begleitet$",
             "options": {
@@ -62,7 +62,7 @@
         },
         {
             "id": -1818595967,
-            "regex": "rt$",
+            "regex": "uhrt$",
             "rawText": "Seltene Monster im Gebiet sind Schöpfer-berührt",
             "generalizedText": "^seltene monster im gebiet sind schopfer-beruhrt$",
             "options": {
@@ -134,7 +134,7 @@
         },
         {
             "id": -1473394034,
-            "regex": "ger ab",
+            "regex": "ger abk",
             "rawText": "Spieler haben (20-40)% weniger Abklingzeit-Rate",
             "generalizedText": "^spieler haben #% weniger abklingzeit-rate$",
             "options": {
@@ -278,7 +278,7 @@
         },
         {
             "id": -999805715,
-            "regex": "tung$",
+            "regex": "stung$",
             "rawText": "Spieler haben (20-40)% verringerte Blockchance|Spieler haben (20-30)% weniger Rüstung",
             "generalizedText": "^spieler haben #% verringerte blockchance$|^spieler haben #% weniger rustung$",
             "options": {
@@ -338,7 +338,7 @@
         },
         {
             "id": -931745379,
-            "regex": "de ra",
+            "regex": "an$",
             "rawText": "Monster wenden bei Treffer 2 Greifende Ranken an|40% mehr gefundene Karten im Gebiet",
             "generalizedText": "^monster wenden bei treffer # greifende ranken an$|^#% mehr gefundene karten im gebiet$",
             "options": {
@@ -470,7 +470,7 @@
         },
         {
             "id": -580302769,
-            "regex": "hter m",
+            "regex": "ohter m",
             "rawText": "(14-40)% erhöhter Monsterschaden",
             "generalizedText": "^#% erhohter monsterschaden$",
             "options": {
@@ -758,7 +758,7 @@
         },
         {
             "id": 151806012,
-            "regex": "derten",
+            "regex": "ur m",
             "rawText": "Spieler haben -(10-20)% zur Menge des verhinderten unterdrückten Zauberschadens|Monster haben (30-50)% erhöhte Treffgenauigkeit",
             "generalizedText": "^spieler haben -#% zur menge des verhinderten unterdruckten zauberschadens$|^monster haben #% erhohte treffgenauigkeit$",
             "options": {
@@ -770,7 +770,7 @@
         },
         {
             "id": 156744008,
-            "regex": "ßere",
+            "regex": "alt$",
             "rawText": "Gebiet hat eine größere Monstervielfalt",
             "generalizedText": "^gebiet hat eine großere monstervielfalt$",
             "options": {
@@ -854,7 +854,7 @@
         },
         {
             "id": 472035128,
-            "regex": "ht$",
+            "regex": "oht$",
             "rawText": "Gebiet hat stellenweise schockenden Boden, der den erlittenen Schaden um (20-50)% erhöht",
             "generalizedText": "^gebiet hat stellenweise schockenden boden, der den erlittenen schaden um #% erhoht$",
             "options": {
@@ -902,7 +902,7 @@
         },
         {
             "id": 647925005,
-            "regex": "'el",
+            "regex": "'fess",
             "rawText": "Spieler sind verflucht mit 'Verwundbarkeit'|Spieler sind verflucht mit 'Fesseln der Zeit'|Spieler sind verflucht mit 'Elementarempfindlichkeit'",
             "generalizedText": "^spieler sind verflucht mit 'verwundbarkeit'$|^spieler sind verflucht mit 'fesseln der zeit'$|^spieler sind verflucht mit 'elementarempfindlichkeit'$",
             "options": {
@@ -974,7 +974,7 @@
         },
         {
             "id": 955801458,
-            "regex": "sse$",
+            "regex": "osse$",
             "rawText": "Gebiet enthält zwei einzigartige Bosse",
             "generalizedText": "^gebiet enthalt zwei einzigartige bosse$",
             "options": {
@@ -998,7 +998,7 @@
         },
         {
             "id": 980061401,
-            "regex": "von da",
+            "regex": "on da",
             "rawText": "Gebiet ist von Dämonen bewohnt",
             "generalizedText": "^gebiet ist von damonen bewohnt$",
             "options": {
@@ -1034,7 +1034,7 @@
         },
         {
             "id": 1062763755,
-            "regex": "se u",
+            "regex": "ise u",
             "rawText": "Gebiet hat stellenweise unterkühlenden Boden",
             "generalizedText": "^gebiet hat stellenweise unterkuhlenden boden$",
             "options": {
@@ -1058,7 +1058,7 @@
         },
         {
             "id": 1082020744,
-            "regex": "eul",
+            "regex": "hkeite",
             "rawText": "Gebiet ist von Abscheulichkeiten besiedelt",
             "generalizedText": "^gebiet ist von abscheulichkeiten besiedelt$",
             "options": {
@@ -1082,7 +1082,7 @@
         },
         {
             "id": 1117764869,
-            "regex": "^sch",
+            "regex": "^schw",
             "rawText": "Schwächungen auf Monstern klingen 100% schneller ab|64% mehr gefundene Währung im Gebiet",
             "generalizedText": "^schwachungen auf monstern klingen #% schneller ab$|^#% mehr gefundene wahrung im gebiet$",
             "options": {
@@ -1094,7 +1094,7 @@
         },
         {
             "id": 1202132179,
-            "regex": "'verw",
+            "regex": "rkeit'",
             "rawText": "Spieler sind verflucht mit 'Verwundbarkeit'",
             "generalizedText": "^spieler sind verflucht mit 'verwundbarkeit'$",
             "options": {
@@ -1142,7 +1142,7 @@
         },
         {
             "id": 1305115176,
-            "regex": "a od",
+            "regex": "in l",
             "rawText": "Spieler können kein Leben, Mana oder Energieschild regenerieren",
             "generalizedText": "^spieler konnen kein leben, mana oder energieschild regenerieren$",
             "options": {
@@ -1178,7 +1178,7 @@
         },
         {
             "id": 1424047266,
-            "regex": "n tie",
+            "regex": "n ti",
             "rawText": "Gebiet ist von Tieren besiedelt",
             "generalizedText": "^gebiet ist von tieren besiedelt$",
             "options": {
@@ -1202,7 +1202,7 @@
         },
         {
             "id": 1464066514,
-            "regex": "iven$",
+            "regex": "ven$",
             "rawText": "Spieler haben (30-25)% weniger Defensiven|35% mehr gefundene Skarabäen im Gebiet",
             "generalizedText": "^spieler haben #% weniger defensiven$|^#% mehr gefundene skarabaen im gebiet$",
             "options": {
@@ -1286,7 +1286,7 @@
         },
         {
             "id": 1598599541,
-            "regex": "'fes",
+            "regex": "'fess",
             "rawText": "Spieler sind verflucht mit 'Fesseln der Zeit'",
             "generalizedText": "^spieler sind verflucht mit 'fesseln der zeit'$",
             "options": {
@@ -1346,7 +1346,7 @@
         },
         {
             "id": 1756122717,
-            "regex": "^die",
+            "regex": "eler$",
             "rawText": "Die Seherin beeinträchtigt Spieler",
             "generalizedText": "^die seherin beeintrachtigt spieler$",
             "options": {
@@ -1370,7 +1370,7 @@
         },
         {
             "id": 1861748274,
-            "regex": "^au",
+            "regex": "^aur",
             "rawText": "Auren von Spieler-Fertigkeiten, die auf Verbündete wirken, wirken auch auf Gegner",
             "generalizedText": "^auren von spieler-fertigkeiten, die auf verbundete wirken, wirken auch auf gegner$",
             "options": {
@@ -1382,7 +1382,7 @@
         },
         {
             "id": 1882321261,
-            "regex": "'el",
+            "regex": "'elem",
             "rawText": "Spieler sind verflucht mit 'Elementarempfindlichkeit'",
             "generalizedText": "^spieler sind verflucht mit 'elementarempfindlichkeit'$",
             "options": {
@@ -1442,7 +1442,7 @@
         },
         {
             "id": 2122294281,
-            "regex": "ter bl",
+            "regex": "r ble",
             "rawText": "Monster blenden bei Treffer",
             "generalizedText": "^monster blenden bei treffer$",
             "options": {
@@ -2046,8 +2046,8 @@
                 -1088873049,
                 -106750911
             ],
-            "regex": "r bos",
-            "weight": 7,
+            "regex": "ss h",
+            "weight": 6,
             "count": 2
         },
         "-1047451686:-210607554:775962019:1082020744:1424047266": {
@@ -2082,15 +2082,6 @@
             "weight": 9,
             "count": 4
         },
-        "-949334443:-481946502": {
-            "ids": [
-                -949334443,
-                -481946502
-            ],
-            "regex": "tern v",
-            "weight": 8,
-            "count": 2
-        },
         "-949334443:-481946502:252096506:670500310:1014295028:2105788016": {
             "ids": [
                 -949334443,
@@ -2100,8 +2091,8 @@
                 1014295028,
                 2105788016
             ],
-            "regex": "von mo",
-            "weight": 8,
+            "regex": "on mo",
+            "weight": 7,
             "count": 6
         },
         "-949334443:252096506:670500310:1014295028:2105788016": {
@@ -2112,9 +2103,18 @@
                 1014295028,
                 2105788016
             ],
-            "regex": "von mo",
-            "weight": 8,
+            "regex": "on mo",
+            "weight": 7,
             "count": 5
+        },
+        "-949334443:-481946502": {
+            "ids": [
+                -949334443,
+                -481946502
+            ],
+            "regex": "tern v",
+            "weight": 8,
+            "count": 2
         },
         "-949334443:-481946502:1014295028": {
             "ids": [
@@ -2237,8 +2237,8 @@
                 -763914456,
                 -105914721
             ],
-            "regex": "te fl",
-            "weight": 7,
+            "regex": "te fla",
+            "weight": 8,
             "count": 2
         },
         "-737013402:194321329": {
@@ -2246,19 +2246,9 @@
                 -737013402,
                 194321329
             ],
-            "regex": "tik",
-            "weight": 3,
-            "count": 2
-        },
-        "-737013402:194321329:1665221611": {
-            "ids": [
-                -737013402,
-                194321329,
-                1665221611
-            ],
-            "regex": "kern",
+            "regex": "atik",
             "weight": 4,
-            "count": 3
+            "count": 2
         },
         "-737013402:194321329:1723792253": {
             "ids": [
@@ -2284,8 +2274,8 @@
                 -645418310,
                 10729340
             ],
-            "regex": "res p",
-            "weight": 7,
+            "regex": "hres p",
+            "weight": 8,
             "count": 2
         },
         "-645418310:10729340:127168403": {
@@ -2294,8 +2284,8 @@
                 10729340,
                 127168403
             ],
-            "regex": "res p",
-            "weight": 7,
+            "regex": "hres p",
+            "weight": 8,
             "count": 3
         },
         "-645418310:-26777606:10729340:127168403:1799781772:2132856290": {
@@ -2414,8 +2404,8 @@
                 -126908257,
                 2080363489
             ],
-            "regex": "icher m",
-            "weight": 9,
+            "regex": "icher mo",
+            "weight": 10,
             "count": 2
         },
         "-106071007:955801458": {
@@ -2476,8 +2466,8 @@
                 1598599541,
                 1882321261
             ],
-            "regex": "ler s",
-            "weight": 7,
+            "regex": "eler s",
+            "weight": 8,
             "count": 5
         },
         "339937661:647925005": {
@@ -2485,8 +2475,8 @@
                 339937661,
                 647925005
             ],
-            "regex": "ler s",
-            "weight": 7,
+            "regex": "eler s",
+            "weight": 8,
             "count": 2
         },
         "472035128:1932675161": {
@@ -2503,47 +2493,26 @@
                 647925005,
                 1882321261
             ],
-            "regex": "'el",
-            "weight": 3,
+            "regex": "'elem",
+            "weight": 5,
             "count": 2
-        },
-        "647925005:1202132179:1598599541:1882321261": {
-            "ids": [
-                647925005,
-                1202132179,
-                1598599541,
-                1882321261
-            ],
-            "regex": "it'",
-            "weight": 3,
-            "count": 4
         },
         "647925005:1598599541": {
             "ids": [
                 647925005,
                 1598599541
             ],
-            "regex": "'fes",
-            "weight": 4,
-            "count": 2
-        },
-        "647925005:1202132179:1882321261": {
-            "ids": [
-                647925005,
-                1202132179,
-                1882321261
-            ],
-            "regex": "keit'",
+            "regex": "'fess",
             "weight": 5,
-            "count": 3
+            "count": 2
         },
         "647925005:1202132179": {
             "ids": [
                 647925005,
                 1202132179
             ],
-            "regex": "'verw",
-            "weight": 5,
+            "regex": "rkeit'",
+            "weight": 6,
             "count": 2
         },
         "670500310:2105788016": {
@@ -2551,7 +2520,7 @@
                 670500310,
                 2105788016
             ],
-            "regex": "rt mo",
+            "regex": "ert m",
             "weight": 7,
             "count": 2
         },

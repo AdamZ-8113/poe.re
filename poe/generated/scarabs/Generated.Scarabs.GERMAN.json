@@ -106,28 +106,28 @@
     },
     "Befall-Skarabäus der Kräftigung": {
         "name": "Befall-Skarabäus der Kräftigung",
-        "regex": "omp",
+        "regex": "pol",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRUaWVyNFNjYXJhYkJsaWdodCIsInNjYWxlIjoxfV0/34e07da01c/AltTier4ScarabBlight.png",
         "flavourText": "Die Polarität des Kompressionsmodulators umzukehren, hat verblüffende Auswirkungen...",
         "description": "Jeder Verstärkende Turm im Gebiet gewährt befallenen Monstern in|Reichweite erhöhte Schwierigkeit und Belohnungen"
     },
     "Befall-Skarabäus des befallenen Herzens": {
         "name": "Befall-Skarabäus des befallenen Herzens",
-        "regex": "yk",
+        "regex": "zy",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9HcmVhdGVyU2NhcmFiQmxpZ2h0Iiwic2NhbGUiOjF9XQ/d0aa6a6d55/GreaterScarabBlight.png",
         "flavourText": "Der Kern wird mit jedem Zyklus größer und ist dazu verdammt, auszubrechen ...",
         "description": "Befall-Begegnungen im Gebiet haben eine Befall-Truhe|Befall-Begegnungen im Gebiet beschwören zusätzliche Wellen von Gegnern|Befall-Truhen im Gebiet werden größer und lohnender,|je mehr befallene Gegner Ihr tötet"
     },
     "Bestien-Skarabäus": {
         "name": "Bestien-Skarabäus",
-        "regex": "ienm",
+        "regex": "two",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJCZWFzdHMiLCJzY2FsZSI6MX1d/a13711c8ed/LesserScarabBeasts.png",
         "flavourText": "Der Bestienmeister antwortet auf den Ruf.",
         "description": "Gebiet enthält Einhar"
     },
     "Bestien-Skarabäus der Herde": {
         "name": "Bestien-Skarabäus der Herde",
-        "regex": "alder",
+        "regex": "lder",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJCZWFzdHMiLCJzY2FsZSI6MX1d/0d5c9d2d30/NormalScarabBeasts.png",
         "flavourText": "Die Ersten sind wild und frei durch die alten Wälder gelaufen.",
         "description": "Gebiet enthält 5 zusätzliche Bestien, wenn es Einhar enthält"
@@ -183,7 +183,7 @@
     },
     "Ernte-Skarabäus der Fülle": {
         "name": "Ernte-Skarabäus der Fülle",
-        "regex": "aum,",
+        "regex": "mso",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYkhhcnZlc3QiLCJzY2FsZSI6MX1d/35e8847de2/Tier4ScarabHarvest.png",
         "flavourText": "Je größer der Baum, umso besser die Frucht.",
         "description": "Wenn das Gebiet den Heiligen Hain enthält, wird es bis zu 1 zusätzlichen Samen des Levels 4 jedes Typs enthalten, falls möglich"
@@ -253,7 +253,7 @@
     },
     "Expedition-Skarabäus des Runenfindens": {
         "name": "Expedition-Skarabäus des Runenfindens",
-        "regex": "das,",
+        "regex": "nfi",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJFeHBlZGl0aW9uIiwic2NhbGUiOjF9XQ/a751f91a8e/NormalScarabExpedition.png",
         "flavourText": "Das, was von den Sternen gekommen ist, sehnt sich nach der Rückkehr.",
         "description": "Expedition-Begegnungen im Gebiet haben 100% erhöhte|Anzahl von Markierungen für Runenmonster"
@@ -274,7 +274,7 @@
     },
     "Gehörnter Skarabäus der Blutlinien": {
         "name": "Gehörnter Skarabäus der Blutlinien",
-        "regex": "rleb",
+        "regex": "rew",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9TdXBlclNjYXJhYjEiLCJzY2FsZSI6MX1d/acc1b258a3/SuperScarab1.png",
         "flavourText": "Nur die Stärksten überleben. Nur die Überlebenden werden verewigt.",
         "description": "Gebiet hat 150% erhöhte Anzahl magischer Monster|Magische Monster im Gebiet haben einen zusätzlichen Modifikator"
@@ -309,7 +309,7 @@
     },
     "Gehörnter Skarabäus des Pandämoniums": {
         "name": "Gehörnter Skarabäus des Pandämoniums",
-        "regex": "ohrt",
+        "regex": "niu",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9TdXBlclNjYXJhYjciLCJzY2FsZSI6MX1d/28b95bae7b/SuperScarab7.png",
         "flavourText": "Durchbohrte Träume bluten in den Verstand.",
         "description": "Monstergruppen im Gebiet haben 15% Chance, durch einen zufälligen Atlasboss ersetzt zu werden|Modifikatoren des finalen Kartenbosses gelten auch für diese Atlasbosse"
@@ -407,7 +407,7 @@
     },
     "Jenseits-Skarabäus der Hämophilie": {
         "name": "Jenseits-Skarabäus der Hämophilie",
-        "regex": "mop",
+        "regex": "ham",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJCZXlvbmQiLCJzY2FsZSI6MX1d/6d3487e108/NormalScarabBeyond.png",
         "flavourText": "Die Realität selbst beginnt zu bluten.",
         "description": "Jenseits-Portale im Gebiet haben 50% erhöhten Überlappungsradius|Charaktere, die seltene Jenseits-Monster im Gebiet töten, haben 30% Chance, für 20 Sekunden einen ihrer Modifikatoren zu erhalten"
@@ -463,7 +463,7 @@
     },
     "Kartographie-Skarabäus der Verderbtheit": {
         "name": "Kartographie-Skarabäus der Verderbtheit",
-        "regex": "t br",
+        "regex": "itate",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9HcmVhdGVyU2NhcmFiTWFwcyIsInNjYWxlIjoxfV0/7c589dbe02/GreaterScarabMaps.png",
         "flavourText": "Die Verderbtheit breitet sich zwischen den Realitäten aus.",
         "description": "In diesem Gebiet gefundene, nicht einzigartige Karten sind verderbt und haben 8 Modifikatoren"
@@ -477,7 +477,7 @@
     },
     "Kartographie-Skarabäus des Risikos": {
         "name": "Kartographie-Skarabäus des Risikos",
-        "regex": "xio",
+        "regex": "lex",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9Ob3JtYWxTY2FyYWJNYXBzIiwic2NhbGUiOjF9XQ/b41df1ff07/NormalScarabMaps.png",
         "flavourText": "Was wir im Spiegel sehen, kann nur unsere eigene Reflexion sein.",
         "description": "Gebiet hat 2 zusätzliche zufällige Modifikatoren."
@@ -610,7 +610,7 @@
     },
     "Skarabäus der Irrlichter": {
         "name": "Skarabäus der Irrlichter",
-        "regex": "e dr",
+        "regex": "binde",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9HcmVhdGVyU2NhcmFiTWlzYzEiLCJzY2FsZSI6MX1d/303001a475/GreaterScarabMisc1.png",
         "flavourText": "Die Draíocht verbindet alle Lebendige.",
         "description": "Monster im Gebiet haben eine Chance, von 2.000 Finsterwald-Irrlichtern verstärkt zu sein"
@@ -645,14 +645,14 @@
     },
     "Skarabäus der Widersacher": {
         "name": "Skarabäus der Widersacher",
-        "regex": "inds",
+        "regex": "dse",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9BbHRMZXNzZXJTY2FyYWJNaXNjIiwic2NhbGUiOjF9XQ/ab24a34cd1/AltLesserScarabMisc.png",
         "flavourText": "Sie stehen Euch mit gleicher Feindseligkeit gegenüber.",
         "description": "Gebiet enthält 4 zusätzliche Gruppen mit gespiegelten seltenen Monstern"
     },
     "Skarabäus der ungeheuerlichen Abstammung": {
         "name": "Skarabäus der ungeheuerlichen Abstammung",
-        "regex": "sgem",
+        "regex": "ntwi",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9MZXNzZXJTY2FyYWJNaXNjIiwic2NhbGUiOjF9XQ/9196715e8d/LesserScarabMisc.png",
         "flavourText": "Die Blutlinien entwickeln sich schneller, als sie ausgemerzt werden können.",
         "description": "40% erhöhte die Gruppengröße magischer Monster"
@@ -736,7 +736,7 @@
     },
     "Trarthanischer Skarabäus der überraschenden Allianzen": {
         "name": "Trarthanischer Skarabäus der überraschenden Allianzen",
-        "regex": "eseh",
+        "regex": "rra",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYk1lcmNlbmFyaWVzIiwic2NhbGUiOjF9XQ/ec12948f39/Tier4ScarabMercenaries.png",
         "flavourText": "\"Eigentlich, historisch gesehen ... sind sie tatsächlich alle Verbannte.\"",
         "description": "Wilde Abtrünnige Verbannte im Gebiet haben 50% Chance, von einem Wilden Söldner begleitet zu werden|Wilde Söldner haben erhöhten Schwierigkeitsgrad für jeden Wilden Söldner im Gebiet"
@@ -771,14 +771,14 @@
     },
     "Ultimatum-Skarabäus des Duellierens": {
         "name": "Ultimatum-Skarabäus des Duellierens",
-        "regex": "gsl",
+        "regex": "utu",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9HcmVhdGVyU2NhcmFiVWx0aW1hdHVtIiwic2NhbGUiOjF9XQ/be3b513bfe/GreaterScarabUltimatum.png",
         "flavourText": "Ein Sieg ist bedeutungslos, ein Scheitern garantiert Spott.",
         "description": "Ultimatum-Begegnungen im Gebiet führen zu einem einzigartigen Boss, falls möglich"
     },
     "Ultimatum-Skarabäus des Katalysierens": {
         "name": "Ultimatum-Skarabäus des Katalysierens",
-        "regex": "beda",
+        "regex": "eda",
         "icon": "/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvU2NhcmFicy9UaWVyNFNjYXJhYlVsdGltYXR1bSIsInNjYWxlIjoxfV0/abfc80cf45/Tier4ScarabUltimatum.png",
         "flavourText": "Die meisten bedauern es, herauszufinden, wie das Pulver hergestellt wird.",
         "description": "Ultimatum-Begegnungen im Gebiet gewähren dem Kartenbesitzer|nur Katalysatoren als Belohnung"
