@@ -6,13 +6,14 @@ import {Poe1Routes} from "@poe/layout/Poe1Routes";
 import * as mapData from "@poe/utils/loadData";
 import {defaultSettings} from "@poe/utils/SavedSettings";
 import catalog from "../../../generated/mapmods/Generated.Map.ENGLISH.json";
-import {readExclusions} from "./PoeImportPage";
+import frenchCatalog from "../../../generated/mapmods/Generated.Map.FRENCH.json";
+import {readExclusions} from "./PobCodesImport";
 
 const ids = [246480838, -2064669900];
-const query = (payload: unknown) => `?app=pob.codes&data=${Buffer.from(JSON.stringify(payload)).toString("base64url")}`;
+const query = (payload: unknown) => `?${new URLSearchParams({data: JSON.stringify(payload)})}`;
 const valid = query({excludeIds: ids});
 const profiles = () => JSON.parse(localStorage.getItem("profiles")!);
-const mount = (path = `/import${valid}`) => {
+const mount = (path = `/import-pob-codes${valid}`) => {
   window.history.replaceState({idx: 0}, "", path);
   return render(<StrictMode><BrowserRouter><Poe1Routes/></BrowserRouter></StrictMode>);
 };
@@ -27,7 +28,7 @@ describe("PoB Codes import", () => {
     localStorage.setItem("selectedProfile", "default");
     localStorage.setItem("webSettings", JSON.stringify({poe1League: "Standard"}));
     vi.stubGlobal("fetch", vi.fn(async (input: RequestInfo | URL) => {
-      if (String(input).includes("/generated/mapmods/")) return {ok: true, json: async () => catalog};
+      if (String(input).includes("/generated/mapmods/")) return {ok: true, json: async () => String(input).includes("FRENCH") ? frenchCatalog : catalog};
       return {ok: true, text: async () => "Standard\nHardcore"};
     }));
     vi.spyOn(console, "log").mockImplementation(() => {});
@@ -44,23 +45,24 @@ describe("PoB Codes import", () => {
   });
 
   it.each([
-    "", "?app=other&data=e30", "?app=pob.codes&data=%%%", "?app=pob.codes&data=a",
-    `?app=pob.codes&data=${"a".repeat(8193)}`, query(null), query({}),
+    "", "?data=e30", "?data=%%%", "?data=a",
+    `?data=${"a".repeat(8193)}`, query(null), query({}),
     query({excludeIds: []}), query({excludeIds: [1.5]}), query({excludeIds: ["1"]}),
-    query({excludeIds: Array(257).fill(ids[0])}), query({excludeIds: ids, name: "ignored"}),
+    query({excludeIds: "invalid"}), query({excludeIds: ids, name: "ignored"}),
   ])("rejects malformed or unsupported input (%#)", search => {
     expect(readExclusions(search)).toBeNull();
   });
 
   it("accepts catalog-sized input and deduplicates IDs", () => {
     expect(readExclusions(query({excludeIds: [...ids, ids[0]]}))).toEqual(ids);
+    expect(readExclusions(query({excludeIds: Array(257).fill(ids[0])}))).toEqual([ids[0]]);
     const all = catalog.tokens.map(mod => mod.id);
     expect(readExclusions(query({excludeIds: all}))).toEqual(all);
   });
 
   it("rejects a mixed known/unknown selection without saving any of it", async () => {
     const before = localStorage.getItem("profiles");
-    mount(`/import${query({excludeIds: [...ids, 123456789]})}`);
+    mount(`/import-pob-codes${query({excludeIds: [...ids, 123456789]})}`);
     expect(await screen.findByRole("alert")).toHaveTextContent("unknown map modifiers");
     expect(screen.queryByRole("button", {name: "Import"})).toBeNull();
     expect(localStorage.getItem("profiles")).toBe(before);
@@ -81,7 +83,8 @@ describe("PoB Codes import", () => {
     const before = localStorage.getItem("profiles");
     mount();
     await confirm();
-    expect(screen.getByText("Map Boss is accompanied by a Synthesis Boss")).toBeInTheDocument();
+    expect(screen.getByText(frenchCatalog.tokens.find(mod => mod.id === ids[1])!.rawText.replaceAll("|", " \u00b7 "))).toBeInTheDocument();
+    expect(window.location.pathname).toBe("/import-pob-codes");
     expect(window.location.search).toBe("");
     expect(localStorage.getItem("profiles")).toBe(before);
     fireEvent.click(screen.getByRole("link", {name: "Cancel"}));
@@ -91,7 +94,8 @@ describe("PoB Codes import", () => {
     expect(localStorage.getItem("selectedProfile")).toBe("default");
   });
 
-  it("creates a profile from defaults and fresh-mounts Maps with its English exclusions", async () => {
+  it.each(["ENGLISH", "FRENCH"])("creates a profile from defaults and preserves the %s language on Maps", async language => {
+    localStorage.setItem("profiles", JSON.stringify({default: {...profiles().default, language}}));
     const old = profiles().default;
     const page = mount();
     const button = await confirm();
@@ -99,14 +103,14 @@ describe("PoB Codes import", () => {
     fireEvent.click(button);
     expect(Object.keys(profiles())).toEqual(["default", "PoB Codes"]);
     expect(profiles()["PoB Codes"]).toEqual({
-      ...defaultSettings, name: "PoB Codes", language: "ENGLISH",
+      ...defaultSettings, name: "PoB Codes", language,
       map: {...defaultSettings.map, badIds: expect.arrayContaining(ids)},
     });
     page.unmount();
     mount("/maps");
     await screen.findByRole("heading", {name: "Optimized Map Modifiers Regex"}, {timeout: 5000});
     await waitFor(() => expect(document.querySelectorAll(".selectable-token-list-selected")).toHaveLength(2));
-    expect(document.querySelector('select[name="language"]')).toHaveValue("ENGLISH");
+    expect(document.querySelector('select[name="language"]')).toHaveValue(language);
     expect(profiles().default).toEqual(old);
     expect(profiles()["PoB Codes"].map.badIds).toEqual(expect.arrayContaining(ids));
     expect(localStorage.getItem("selectedProfile")).toBe("PoB Codes");

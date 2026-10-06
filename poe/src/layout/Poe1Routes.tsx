@@ -2,7 +2,7 @@ import React, {lazy, Suspense} from "react";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {Poe1Layout} from "./Poe1Layout";
 
-const PoeImportPage = lazy(() => import("../pages/import/PoeImportPage"));
+const PobCodesImport = lazy(() => import("../pages/import/PobCodesImport"));
 const Vendor = lazy(() => import("../pages/vendor/Vendor"));
 const OptimizedMapMods = lazy(() => import("../pages/maps/OptimizedMapMods"));
 const Boat = lazy(() => import("../pages/boat/Boat"));
@@ -26,7 +26,7 @@ export const Poe1Routes = () => (
       <Route path="favorites" element={<Favorites/>}/>
       <Route path="vendor" element={<Vendor/>}/>
       <Route path="gems" element={<Gems/>}/>
-      <Route path="import" element={<PoeImportPage/>}/>
+      <Route path="import-pob-codes" element={<PobCodesImport/>}/>
       <Route path="maps" element={<OptimizedMapMods/>}/>
       <Route path="boat" element={<Boat/>}/>
       <Route path="items" element={<Item/>}/>

@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import FilterCard from "@shared/components/FilterCard/FilterCard";
 import "@shared/components/profile/Profile.css";
+import {ProfileContext} from "@poe/components/profile/ProfileContext";
 import {loadMapMods} from "@poe/utils/loadData";
 import {loadProfileNames, setSelectedProfile, updateSettings} from "@poe/utils/LocalStorage";
 import {defaultSettings} from "@poe/utils/SavedSettings";
@@ -10,11 +11,11 @@ import type {MapModsRegex} from "@poe/types/generated/mapmods";
 export function readExclusions(search: string): number[] | null {
   const params = new URLSearchParams(search);
   const data = params.get("data") ?? "";
-  if (params.get("app") !== "pob.codes" || data.length > 8192 || !/^[\w-]+$/.test(data)) return null;
+  if (data.length > 8192) return null;
   try {
-    const payload = JSON.parse(atob(data.replace(/-/g, "+").replace(/_/g, "/")));
+    const payload = JSON.parse(data);
     if (!payload || Object.keys(payload).length !== 1 || !Array.isArray(payload.excludeIds) ||
-        payload.excludeIds.length === 0 || payload.excludeIds.length > 256 ||
+        payload.excludeIds.length === 0 ||
         !payload.excludeIds.every(Number.isSafeInteger)) return null;
     return [...new Set<number>(payload.excludeIds)];
   } catch {
@@ -22,7 +23,8 @@ export function readExclusions(search: string): number[] | null {
   }
 }
 
-export default function PoeImportPage() {
+export default function PobCodesImport() {
+  const {lang} = useContext(ProfileContext);
   const {search} = useLocation();
   const navigate = useNavigate();
   const [query] = useState(search);
@@ -32,14 +34,14 @@ export default function PoeImportPage() {
 
   useEffect(() => {
     // Capture once and remove the payload from this history entry, including in Strict Mode.
-    navigate("/import", {replace: true});
+    navigate("/import-pob-codes", {replace: true});
     const ids = readExclusions(query);
     if (!ids) {
       setError("Invalid PoB Codes import link. Open a new link from pob.codes.");
       return;
     }
     let active = true;
-    loadMapMods("ENGLISH").then(catalog => {
+    loadMapMods(lang).then(catalog => {
       if (!active) return;
       const selected = catalog.tokens.filter(mod => ids.includes(mod.id));
       if (selected.length === ids.length) setMods(selected);
@@ -48,7 +50,7 @@ export default function PoeImportPage() {
       if (active) setError("Could not load map modifiers. Open the link again from pob.codes.");
     });
     return () => { active = false; };
-  }, [navigate, query]);
+  }, [lang, navigate, query]);
 
   function importProfile() {
     if (!mods || saving) return;
@@ -56,9 +58,10 @@ export default function PoeImportPage() {
     try {
       const names = loadProfileNames();
       let name = "PoB Codes";
-      for (let suffix = 2; names.includes(name); suffix++) name = `PoB Codes (${suffix})`;
+      let suffix = 2;
+      while (names.includes(name)) name = `PoB Codes (${suffix++})`;
       updateSettings(name, () => ({
-        ...defaultSettings, name, language: "ENGLISH",
+        ...defaultSettings, name, language: lang,
         map: {...defaultSettings.map, badIds: mods.map(mod => mod.id)},
       }));
       setSelectedProfile(name);
@@ -77,7 +80,7 @@ export default function PoeImportPage() {
         {error && <p role="alert">{error}</p>}
         {!mods && !error && <p role="status">Loading map modifiers...</p>}
         {mods && <>
-          <p>Create a new English profile excluding these {mods.length} map modifiers.
+          <p>Create a new profile excluding these {mods.length} map modifiers.
             You can rename it on the Maps page.</p>
           <ul>{mods.map(mod => <li key={mod.id}>{mod.rawText.replaceAll("|", " · ")}</li>)}</ul>
         </>}
